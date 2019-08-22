@@ -1,0 +1,122 @@
+<style type="text/css">
+
+    figure.captionright {
+        display: flex;
+        align-items: center;
+    }
+    @media only all and (max-width: 59.938em) {
+        figure.captionright {
+            flex-direction: column;
+        }
+    }
+
+    figure.captionright a {
+        flex: 1;
+    }
+    
+    figure.captionright figcaption {
+        flex: 1;
+        margin-left: 3rem;
+    }
+    
+    figure.captionright figcaption h4 {
+        font-size: 2rem;
+        opacity: 1.0;
+        line-height: 1.1;
+        margin-top: 0;
+    }
+    
+    figure.captionleft {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    @media only all and (max-width: 59.938em) {
+        figure.captionleft {
+            flex-direction: column;
+        }
+    }
+    figure.captionleft a {
+        flex: 1;
+    }
+    
+    figure.captionleft figcaption {
+        flex: 1;
+        margin-right: 3rem;
+    }
+    
+    figure.captionleft figcaption h4 {
+        font-size: 2rem;
+        opacity: 1.0;
+        line-height: 1.1;
+        margin-top: 0;
+    }
+    
+    {{if .IsHome}}
+        body {
+            font-size: 1.2em !important;
+        }
+
+        figure figcaption h4 {
+            font-size: 2rem;
+            opacity: 1.0;
+            line-height: 1.1;
+            margin-top: 0;
+        }
+
+        #sidebar {
+            width: 300px;
+            left: -300px;
+        }
+    
+        .sidebar-hidden #body {
+            margin-left: 300px;
+            overflow: hidden;
+        }
+    
+        @media only all and (max-width: 59.938em) {
+            #sidebar {
+                width: 230px;
+            }
+            .sidebar-hidden #body {
+                margin-left: 230px;
+                overflow: hidden;
+            }
+        }
+        
+        #body {
+            margin-left: 0;
+            width: 100%;
+        }
+
+        #body .padding {
+            max-width: 1600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        .sidebar-hidden {
+            overflow: hidden;
+        }
+    
+        .sidebar-hidden #sidebar {
+            left: 0;
+        }
+    
+        .sidebar-hidden #overlay {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 10;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+        }
+        
+        #sidebar-toggle-span {
+            display: inline;
+        }
+    {{ end }}
+    </style>
+    
