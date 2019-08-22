@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.56.0" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/UnrealLab/images/favicon.png" type="image/png">
+
+    <title>YOLO :: Homepage</title>
+
+    
+    <link href="/UnrealLab/css/nucleus.css?1566498636" rel="stylesheet">
+    <link href="/UnrealLab/css/fontawesome-all.min.css?1566498636" rel="stylesheet">
+    <link href="/UnrealLab/css/hybrid.css?1566498636" rel="stylesheet">
+    <link href="/UnrealLab/css/featherlight.min.css?1566498636" rel="stylesheet">
+    <link href="/UnrealLab/css/perfect-scrollbar.min.css?1566498636" rel="stylesheet">
+    <link href="/UnrealLab/css/auto-complete.css?1566498636" rel="stylesheet">
+    <link href="/UnrealLab/css/atom-one-dark-reasonable.css?1566498636" rel="stylesheet">
+    <link href="/UnrealLab/css/theme.css?1566498636" rel="stylesheet">
+    <link href="/UnrealLab/css/hugo-theme.css?1566498636" rel="stylesheet">
+    
+      <link href="/UnrealLab/css/theme-grey.css?1566498636" rel="stylesheet">
+    
+
+    <script src="/UnrealLab/js/jquery-3.3.1.min.js?1566498636"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    <style type="text/css">
+
+    figure.captionright {
+        display: flex;
+        align-items: center;
+    }
+    @media only all and (max-width: 59.938em) {
+        figure.captionright {
+            flex-direction: column;
+        }
+    }
+
+    figure.captionright a {
+        flex: 1;
+    }
+    
+    figure.captionright figcaption {
+        flex: 1;
+        margin-left: 3rem;
+    }
+    
+    figure.captionright figcaption h4 {
+        font-size: 2rem;
+        opacity: 1.0;
+        line-height: 1.1;
+        margin-top: 0;
+    }
+    
+    figure.captionleft {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    @media only all and (max-width: 59.938em) {
+        figure.captionleft {
+            flex-direction: column;
+        }
+    }
+    figure.captionleft a {
+        flex: 1;
+    }
+    
+    figure.captionleft figcaption {
+        flex: 1;
+        margin-right: 3rem;
+    }
+    
+    figure.captionleft figcaption h4 {
+        font-size: 2rem;
+        opacity: 1.0;
+        line-height: 1.1;
+        margin-top: 0;
+    }
+    
+    
+    </style>
+    
+  </head>
+  <body class="" data-url="/UnrealLab/advanced_examples/yolo/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="https://lolleko.github.io/UnrealLab/" style="fill: #fff">
+    <svg xmlns="http://www.w3.org/2000/svg" style="width:100%; height:100%;" viewBox="0 100 400 100"><path d="M35.52 176.93L35.52 176.93L35.52 176.93Q30.16 176.93 25.81 174.81L25.81 174.81L25.81 174.81Q21.45 172.69 18.85 168.23L18.85 168.23L18.85 168.23Q16.25 163.76 16.25 156.84L16.25 156.84L16.25 123.96L22.50 123.96L22.50 156.92L22.50 156.92Q22.50 164.51 26.14 167.93L26.14 167.93L26.14 167.93Q29.79 171.35 35.66 171.35L35.66 171.35L35.66 171.35Q41.54 171.35 45.11 167.93L45.11 167.93L45.11 167.93Q48.68 164.51 48.68 156.92L48.68 156.92L48.68 123.96L54.93 123.96L54.93 156.84L54.93 156.84Q54.93 163.76 52.33 168.23L52.33 168.23L52.33 168.23Q49.73 172.69 45.34 174.81L45.34 174.81L45.34 174.81Q40.95 176.93 35.52 176.93ZM71.75 176.04L65.50 176.04L65.50 123.96L71.75 123.96L99.50 165.70L99.50 123.96L105.75 123.96L105.75 176.04L99.50 176.04L71.75 134.30L71.75 176.04ZM123.01 176.04L116.76 176.04L116.76 123.96L133.58 123.96L133.58 123.96Q139.68 123.96 143.54 125.97L143.54 125.97L143.54 125.97Q147.41 127.98 149.27 131.47L149.27 131.47L149.27 131.47Q151.13 134.97 151.13 139.21L151.13 139.21L151.13 139.21Q151.13 144.12 148.49 148.07L148.49 148.07L148.49 148.07Q145.85 152.01 140.27 153.65L140.27 153.65L151.65 176.04L144.29 176.04L133.72 154.54L133.28 154.54L123.01 154.54L123.01 176.04ZM123.01 129.24L123.01 149.63L133.13 149.63L133.13 149.63Q139.16 149.63 141.91 146.73L141.91 146.73L141.91 146.73Q144.66 143.82 144.66 139.29L144.66 139.29L144.66 139.29Q144.66 134.67 141.95 131.96L141.95 131.96L141.95 131.96Q139.23 129.24 133.05 129.24L133.05 129.24L123.01 129.24ZM193.10 176.04L160.88 176.04L160.88 123.96L193.10 123.96L193.10 129.09L167.13 129.09L167.13 147.25L190.86 147.25L190.86 152.31L167.13 152.31L167.13 170.91L193.10 170.91L193.10 176.04ZM206.12 176.04L199.57 176.04L218.76 123.96L225.38 123.96L244.51 176.04L237.88 176.04L233.12 162.65L210.95 162.65L206.12 176.04ZM222.04 131.85L212.81 157.59L231.26 157.59L222.04 131.85ZM282.75 176.04L252.24 176.04L252.24 123.96L258.49 123.96L258.49 171.06L282.75 171.06L282.75 176.04Z"/><path d="M320.51 176.93L320.51 176.93L320.51 176.93Q313.15 176.93 307.64 173.58L307.64 173.58L307.64 173.58Q302.14 170.24 299.09 164.25L299.09 164.25L299.09 164.25Q296.04 158.26 296.04 150.30L296.04 150.30L296.04 150.30Q296.04 142.26 299.20 136.12L299.20 136.12L299.20 136.12Q302.36 129.99 308.20 126.53L308.20 126.53L308.20 126.53Q314.04 123.07 322.08 123.07L322.08 123.07L322.08 123.07Q331.23 123.07 337.25 127.46L337.25 127.46L337.25 127.46Q343.28 131.85 345.07 139.58L345.07 139.58L334.43 139.58L334.43 139.58Q333.24 135.94 330.11 133.89L330.11 133.89L330.11 133.89Q326.99 131.85 322.08 131.85L322.08 131.85L322.08 131.85Q314.26 131.85 310.02 136.79L310.02 136.79L310.02 136.79Q305.78 141.74 305.78 150.37L305.78 150.37L305.78 150.37Q305.78 159.00 309.99 163.73L309.99 163.73L309.99 163.73Q314.19 168.45 321.41 168.45L321.41 168.45L321.41 168.45Q328.47 168.45 332.08 164.62L332.08 164.62L332.08 164.62Q335.69 160.79 336.44 154.54L336.44 154.54L323.27 154.54L323.27 147.40L346.03 147.40L346.03 176.04L337.25 176.04L336.51 169.20L336.51 169.20Q333.98 172.92 330.19 174.92L330.19 174.92L330.19 174.92Q326.39 176.93 320.51 176.93ZM376.91 176.04L367.39 176.04L367.39 131.62L352.21 131.62L352.21 123.96L392.16 123.96L392.16 131.62L376.91 131.62L376.91 176.04Z"/></svg>
+
+</a>
+  
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/UnrealLab/js/lunr.min.js?1566498636"></script>
+<script type="text/javascript" src="/UnrealLab/js/auto-complete.js?1566498636"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/lolleko.github.io\/UnrealLab\/";
+    
+</script>
+<script type="text/javascript" src="/UnrealLab/js/search.js?1566498636"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/UnrealLab/basics/" title="Basics" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/UnrealLab/basics/">
+          <b>1. </b>Basics
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/UnrealLab/basics/installation/" title="Installation" class="dd-item ">
+        <a href="/UnrealLab/basics/installation/">
+        Installation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/UnrealLab/basics/generating-the-first-images/" title="Generating the First Images" class="dd-item ">
+        <a href="/UnrealLab/basics/generating-the-first-images/">
+        Generating the First Images
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/UnrealLab/basics/debugging-generation/" title="Debugging Generation" class="dd-item ">
+        <a href="/UnrealLab/basics/debugging-generation/">
+        Debugging Generation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/UnrealLab/components/" title="Components" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/UnrealLab/components/">
+          <b>2. </b>Components
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/UnrealLab/components/generators/" title="Generators" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/UnrealLab/components/generators/">
+          <b>2.1 </b>Generators
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/UnrealLab/components/generators/image/" title="Image" class="dd-item ">
+        <a href="/UnrealLab/components/generators/image/">
+        Image
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/UnrealLab/components/generators/depth/" title="Depth" class="dd-item ">
+        <a href="/UnrealLab/components/generators/depth/">
+        Depth
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/UnrealLab/components/generators/normal/" title="Normal" class="dd-item ">
+        <a href="/UnrealLab/components/generators/normal/">
+        Normal
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/UnrealLab/components/generators/segmentation/" title="Segmentation" class="dd-item ">
+        <a href="/UnrealLab/components/generators/segmentation/">
+        Segmentation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/UnrealLab/components/generators/actorinfo/" title="Actorinfo" class="dd-item ">
+        <a href="/UnrealLab/components/generators/actorinfo/">
+        Actorinfo
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/UnrealLab/components/streamers/" title="Streamers" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/UnrealLab/components/streamers/">
+          <b>2.2 </b>Streamers
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/UnrealLab/advanced_examples/" title="Advanced Examples" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/UnrealLab/advanced_examples/">
+          <b>3. </b>Advanced Examples
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/UnrealLab/advanced_examples/orb-slam2/" title="ORB-SLAM2" class="dd-item ">
+        <a href="/UnrealLab/advanced_examples/orb-slam2/">
+        ORB-SLAM2
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/UnrealLab/advanced_examples/yolo/" title="YOLO" class="dd-item active">
+        <a href="/UnrealLab/advanced_examples/yolo/">
+        YOLO
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/lolleko/UnrealLab"><i class='fab fa-github'></i> Github repo</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://lolleko.github.io/UnrealLab/showcase"><i class='fas fa-camera'></i> Showcases</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      <center>
+    
+    <a class="github-button" href="https://github.com/lolleko/UnrealLab/hugo-theme-learn" data-icon="octicon-star" data-show-count="true" aria-label="Star matcornic/hugo-theme-learn on GitHub">Star</a>
+
+    
+    <a class="github-button" href="https://github.com/lolleko/UnrealLab/hugo-theme-learn/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork matcornic/hugo-theme-learn on GitHub">Fork</a>
+
+    <p>Built with <a href="https://gohugo.io/">Hugo</a> and the <a href="https://github.com/matcornic/hugo-theme-learn">Learn Theme</a></p>
+</center>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/UnrealLab/'>Unreal GT</a> > <a href='/UnrealLab/advanced_examples/'>Advanced Examples</a> > YOLO
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              YOLO
+            </h1>
+          
+
+        
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/UnrealLab/advanced_examples/orb-slam2/" title="ORB-SLAM2"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/UnrealLab/advanced_examples/orb-slam2/" title="ORB-SLAM2" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/UnrealLab/js/clipboard.min.js?1566498636"></script>
+    <script src="/UnrealLab/js/perfect-scrollbar.min.js?1566498636"></script>
+    <script src="/UnrealLab/js/perfect-scrollbar.jquery.min.js?1566498636"></script>
+    <script src="/UnrealLab/js/jquery.sticky.js?1566498636"></script>
+    <script src="/UnrealLab/js/featherlight.min.js?1566498636"></script>
+    <script src="/UnrealLab/js/html5shiv-printshiv.min.js?1566498636"></script>
+    <script src="/UnrealLab/js/highlight.pack.js?1566498636"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/UnrealLab/js/modernizr.custom-3.6.0.js?1566498636"></script>
+    <script src="/UnrealLab/js/learn.js?1566498636"></script>
+    <script src="/UnrealLab/js/hugo-learn.js?1566498636"></script>
+
+    <link href="/UnrealLab/mermaid/mermaid.css?1566498636" rel="stylesheet" />
+    <script src="/UnrealLab/mermaid/mermaid.js?1566498636"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

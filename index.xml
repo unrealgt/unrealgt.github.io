@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unreal GT on Homepage</title>
+    <link>https://lolleko.github.io/UnrealLab/</link>
+    <description>Recent content in Unreal GT on Homepage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 Aug 2019 15:10:48 +0200</lastBuildDate>
+    
+	<atom:link href="https://lolleko.github.io/UnrealLab/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Image</title>
+      <link>https://lolleko.github.io/UnrealLab/components/generators/image/</link>
+      <pubDate>Tue, 20 Aug 2019 15:10:20 +0200</pubDate>
+      
+      <guid>https://lolleko.github.io/UnrealLab/components/generators/image/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Installation</title>
+      <link>https://lolleko.github.io/UnrealLab/basics/installation/</link>
+      <pubDate>Fri, 26 Jul 2019 14:14:04 +0200</pubDate>
+      
+      <guid>https://lolleko.github.io/UnrealLab/basics/installation/</guid>
+      <description>The only way to install the plugin currently is to build it from Source:
+ Clone this repo and copy Plugins/ULab into your projects plugin Directory.
+ Generate VisualStudio project files by right clicking your projects .uproject file.
+ Launch the generated Solution
+ Select DebugGameEditor or DevelopmentGameEditor as Target and Run the build.
+ After the Editor has launched goto Edit &amp;gt; Plugins and enable the ULab plugin.
+  // TODO add prebuilt binary instructions?</description>
+    </item>
+    
+    <item>
+      <title>Depth</title>
+      <link>https://lolleko.github.io/UnrealLab/components/generators/depth/</link>
+      <pubDate>Tue, 20 Aug 2019 15:10:26 +0200</pubDate>
+      
+      <guid>https://lolleko.github.io/UnrealLab/components/generators/depth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Generating the First Images</title>
+      <link>https://lolleko.github.io/UnrealLab/basics/generating-the-first-images/</link>
+      <pubDate>Fri, 26 Jul 2019 14:20:36 +0200</pubDate>
+      
+      <guid>https://lolleko.github.io/UnrealLab/basics/generating-the-first-images/</guid>
+      <description>Open a scene of your choice in the Editor.
+ Right click in the content Browser and create a new Blueprint and choose Actor as base class.
+  Open your Blueprint in the editor.
+ Add the following components to your created Blueprint: ULImageGenerator, ULFileStreamer, ULTimedCaptureTrigger and an optional ULCameraMovement
+  Component Configuration ULImageGenerator
+The Image generator is responsible for generating pixel data from the scene.
+You can configure the resolution and output image format.</description>
+    </item>
+    
+    <item>
+      <title>Normal</title>
+      <link>https://lolleko.github.io/UnrealLab/components/generators/normal/</link>
+      <pubDate>Tue, 20 Aug 2019 15:10:33 +0200</pubDate>
+      
+      <guid>https://lolleko.github.io/UnrealLab/components/generators/normal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Debugging Generation</title>
+      <link>https://lolleko.github.io/UnrealLab/basics/debugging-generation/</link>
+      <pubDate>Fri, 26 Jul 2019 14:25:09 +0200</pubDate>
+      
+      <guid>https://lolleko.github.io/UnrealLab/basics/debugging-generation/</guid>
+      <description>Click the ULab Icon in the Toolbar to open the debug Window. Type the name of the generator component you want to debug into the text input to render debug info.
+ </description>
+    </item>
+    
+    <item>
+      <title>Segmentation</title>
+      <link>https://lolleko.github.io/UnrealLab/components/generators/segmentation/</link>
+      <pubDate>Tue, 20 Aug 2019 15:10:41 +0200</pubDate>
+      
+      <guid>https://lolleko.github.io/UnrealLab/components/generators/segmentation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Actorinfo</title>
+      <link>https://lolleko.github.io/UnrealLab/components/generators/actorinfo/</link>
+      <pubDate>Tue, 20 Aug 2019 15:10:48 +0200</pubDate>
+      
+      <guid>https://lolleko.github.io/UnrealLab/components/generators/actorinfo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ORB-SLAM2</title>
+      <link>https://lolleko.github.io/UnrealLab/advanced_examples/orb-slam2/</link>
+      <pubDate>Fri, 26 Jul 2019 16:39:11 +0200</pubDate>
+      
+      <guid>https://lolleko.github.io/UnrealLab/advanced_examples/orb-slam2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>YOLO</title>
+      <link>https://lolleko.github.io/UnrealLab/advanced_examples/yolo/</link>
+      <pubDate>Fri, 26 Jul 2019 16:38:50 +0200</pubDate>
+      
+      <guid>https://lolleko.github.io/UnrealLab/advanced_examples/yolo/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
