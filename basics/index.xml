@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Basics on Homepage</title>
-    <link>https://lolleko.github.io/UnrealLab/basics/</link>
+    <link>https://unrealgt.github.io/basics/</link>
     <description>Recent content in Basics on Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 26 Jul 2019 12:08:30 +0200</lastBuildDate>
     
-	<atom:link href="https://lolleko.github.io/UnrealLab/basics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://unrealgt.github.io/basics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Installation</title>
-      <link>https://lolleko.github.io/UnrealLab/basics/installation/</link>
+      <link>https://unrealgt.github.io/basics/installation/</link>
       <pubDate>Fri, 26 Jul 2019 14:14:04 +0200</pubDate>
       
-      <guid>https://lolleko.github.io/UnrealLab/basics/installation/</guid>
+      <guid>https://unrealgt.github.io/basics/installation/</guid>
       <description>The only way to install the plugin currently is to build it from Source:
  Clone this repo and copy Plugins/ULab into your projects plugin Directory.
  Generate VisualStudio project files by right clicking your projects .uproject file.
@@ -28,10 +28,10 @@
     
     <item>
       <title>Generating the First Images</title>
-      <link>https://lolleko.github.io/UnrealLab/basics/generating-the-first-images/</link>
+      <link>https://unrealgt.github.io/basics/generating-the-first-images/</link>
       <pubDate>Fri, 26 Jul 2019 14:20:36 +0200</pubDate>
       
-      <guid>https://lolleko.github.io/UnrealLab/basics/generating-the-first-images/</guid>
+      <guid>https://unrealgt.github.io/basics/generating-the-first-images/</guid>
       <description>Open a scene of your choice in the Editor.
  Right click in the content Browser and create a new Blueprint and choose Actor as base class.
   Open your Blueprint in the editor.
@@ -43,10 +43,10 @@ You can configure the resolution and output image format.</description>
     
     <item>
       <title>Debugging Generation</title>
-      <link>https://lolleko.github.io/UnrealLab/basics/debugging-generation/</link>
+      <link>https://unrealgt.github.io/basics/debugging-generation/</link>
       <pubDate>Fri, 26 Jul 2019 14:25:09 +0200</pubDate>
       
-      <guid>https://lolleko.github.io/UnrealLab/basics/debugging-generation/</guid>
+      <guid>https://unrealgt.github.io/basics/debugging-generation/</guid>
       <description>Click the ULab Icon in the Toolbar to open the debug Window. Type the name of the generator component you want to debug into the text input to render debug info.
  </description>
     </item>

@@ -1,125 +1,125 @@
 [
 {
-	"uri": "https://lolleko.github.io/UnrealLab/components/generators/image/",
+	"uri": "https://unrealgt.github.io/components/generators/image/",
 	"title": "Image",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://lolleko.github.io/UnrealLab/basics/installation/",
+	"uri": "https://unrealgt.github.io/basics/installation/",
 	"title": "Installation",
 	"tags": [],
 	"description": "",
 	"content": "The only way to install the plugin currently is to build it from Source:\n Clone this repo and copy Plugins/ULab into your projects plugin Directory.\n Generate VisualStudio project files by right clicking your projects .uproject file.\n Launch the generated Solution\n Select DebugGameEditor or DevelopmentGameEditor as Target and Run the build.\n After the Editor has launched goto Edit \u0026gt; Plugins and enable the ULab plugin.\n  // TODO add prebuilt binary instructions?\n"
 },
 {
-	"uri": "https://lolleko.github.io/UnrealLab/basics/",
+	"uri": "https://unrealgt.github.io/basics/",
 	"title": "Basics",
 	"tags": [],
 	"description": "",
 	"content": " Chapter 1 Basics This chapter will guide you through the installation process and explains the basic usage of the Engine Plugin.\n"
 },
 {
-	"uri": "https://lolleko.github.io/UnrealLab/components/generators/depth/",
+	"uri": "https://unrealgt.github.io/components/generators/depth/",
 	"title": "Depth",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://lolleko.github.io/UnrealLab/components/generators/",
+	"uri": "https://unrealgt.github.io/components/generators/",
 	"title": "Generators",
 	"tags": [],
 	"description": "",
 	"content": " Chapter 2.1 Generators Lorem Ipsum.\n"
 },
 {
-	"uri": "https://lolleko.github.io/UnrealLab/components/",
+	"uri": "https://unrealgt.github.io/components/",
 	"title": "Components",
 	"tags": [],
 	"description": "",
 	"content": " Chapter 2 Data Generators \u0026amp; Streamers Overview of the Generator Streamer System and the individual components.\nData Generators Data Streamer "
 },
 {
-	"uri": "https://lolleko.github.io/UnrealLab/basics/generating-the-first-images/",
+	"uri": "https://unrealgt.github.io/basics/generating-the-first-images/",
 	"title": "Generating the First Images",
 	"tags": [],
 	"description": "",
 	"content": " Open a scene of your choice in the Editor.\n Right click in the content Browser and create a new Blueprint and choose Actor as base class.\n  Open your Blueprint in the editor.\n Add the following components to your created Blueprint: ULImageGenerator, ULFileStreamer, ULTimedCaptureTrigger and an optional ULCameraMovement\n  Component Configuration ULImageGenerator\nThe Image generator is responsible for generating pixel data from the scene.\nYou can configure the resolution and output image format. We use BMP as format in this example since it doesn\u0026rsquo;t require CPU heavy compression.\nKeep in mind that multiple image generators or high resolutions will degrade your performance at runtime, because each image generator requires it\u0026rsquo;s own render pass.\n ULFileStreamer\nA Streamer component streams generated Data. In this case the generated image will be streamed into a file.\nTo link the streamer with a generator select the image generator from the dropdown. If it doesn\u0026rsquo;t show up hit compile at the top and retry.\n You can also set the naming convention for the created files. You have access to {ID} and {Time} as variables. The files are stored inside your Projects Saved Directory in the ULab folder.\nULTimedCaptureTrigger\nThis component is responsible for triggering Data generation. Generator Components that should be triggered by this component, must be added to the TriggerComponents Array.\n In this case the generation is triggered at a fixed time interval which can be modified by changing the Frame Rate parameter 1/framerate = time between images in seconds. Be careful with high frame rates or the TriggerEveryFrame options as those will heavily degrade performance.\nULCameraMovement (optional)\nIf you don\u0026rsquo;t want to capture at a fixed location you can add a CameraMovementComponent to your blueprint. This component will add some basic movement capabilities to your Blueprint/Actor, which can be configured in the properties tab.\nWe choose the default Follow Main View as movement mode. (TODO movement mode will be an enum in the future update image)\n  Follow Main View will follow your main viewport camera/player Follow Actor will follow a actor, this actor can only be selected after the Blueprint has been placed in a level Follow Rail will follow a camera Rail Actor, you can configure the speed at which our Blueprint Actor will follow the rail.\nTutorial for camera rails: https://docs.unrealengine.com/en-us/Engine/Sequencer/HowTo/CameraRigRail you can skip 2-3. and 9.-16, we will use our blueprint as cine camera instead and the movement a long the rail is handled by this component not the sequencer.  Examples: https://github.com/lolleko/UnrealLab/tree/master/Plugins/ULab/Content/Examples\nFirst Test Once you configured your components save and compile your blueprint.\nDrag and drop your blueprint from the content browser into the scene. You should see a camera indicating the direction your ImageGenerator is going to record.\nStart the simulation and images should get generated in your Saved/ULab directory.\n"
 },
 {
-	"uri": "https://lolleko.github.io/UnrealLab/components/generators/normal/",
+	"uri": "https://unrealgt.github.io/components/generators/normal/",
 	"title": "Normal",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://lolleko.github.io/UnrealLab/components/streamers/",
+	"uri": "https://unrealgt.github.io/components/streamers/",
 	"title": "Streamers",
 	"tags": [],
 	"description": "",
 	"content": " Chapter 2.2 Streamers Lorem Ipsum.\n"
 },
 {
-	"uri": "https://lolleko.github.io/UnrealLab/advanced_examples/",
+	"uri": "https://unrealgt.github.io/advanced_examples/",
 	"title": "Advanced Examples",
 	"tags": [],
 	"description": "",
 	"content": " Chapter 3 Advanced Examples Examples that show of the complete process from data generation with UnrealGT to the processing with a thridparty tool.\n"
 },
 {
-	"uri": "https://lolleko.github.io/UnrealLab/basics/debugging-generation/",
+	"uri": "https://unrealgt.github.io/basics/debugging-generation/",
 	"title": "Debugging Generation",
 	"tags": [],
 	"description": "",
 	"content": "Click the ULab Icon in the Toolbar to open the debug Window. Type the name of the generator component you want to debug into the text input to render debug info.\n "
 },
 {
-	"uri": "https://lolleko.github.io/UnrealLab/components/generators/segmentation/",
+	"uri": "https://unrealgt.github.io/components/generators/segmentation/",
 	"title": "Segmentation",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://lolleko.github.io/UnrealLab/components/generators/actorinfo/",
+	"uri": "https://unrealgt.github.io/components/generators/actorinfo/",
 	"title": "Actorinfo",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://lolleko.github.io/UnrealLab/",
+	"uri": "https://unrealgt.github.io/",
 	"title": "Unreal GT",
 	"tags": [],
 	"description": "",
 	"content": " By means of synthetic data generation, large amounts of image- and metadata can be extracted directly from a virtual scene, which in turn can be customized to meet the specific needs of the algorithm or the use-case. Furthermore, the use of virtual objects avoids problems that might arise due to data protec- tion issues and does not require the use of expensive sensors. We propose a framework for synthetic test data generation utilizing the Unreal Engine.\n Unreal EngineThe Unreal Engine provides a simulation environment that allows one to simulate complex situations in a virtual world, such as data acquisition with UAVs or autonomous diving.\n   Computer VisionBuilt-In Generators provide a large vareity of image generators. In addtion to basic color images, depth images, semantic segmenations, normal and depth maps. Image Generators can also be used in conjungtion to create multi camera setups.\n    Deep LearningGenerate accurate grountruth, for machine learning tasks. Bounding boxes, pose data(WIP) and various other properties of scene objects can be extracted\n   Fast Setup \u0026amp; ConfigurationBy utilizing the UI of the Unreal Editor complex data generation constructs can be created in minutes, without touching a single line of code.\n  Click here to get started!  -- "
 },
 {
-	"uri": "https://lolleko.github.io/UnrealLab/advanced_examples/orb-slam2/",
+	"uri": "https://unrealgt.github.io/advanced_examples/orb-slam2/",
 	"title": "ORB-SLAM2",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://lolleko.github.io/UnrealLab/advanced_examples/yolo/",
+	"uri": "https://unrealgt.github.io/advanced_examples/yolo/",
 	"title": "YOLO",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://lolleko.github.io/UnrealLab/categories/",
+	"uri": "https://unrealgt.github.io/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://lolleko.github.io/UnrealLab/tags/",
+	"uri": "https://unrealgt.github.io/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",

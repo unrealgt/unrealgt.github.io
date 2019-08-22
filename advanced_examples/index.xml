@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Advanced Examples on Homepage</title>
-    <link>https://lolleko.github.io/UnrealLab/advanced_examples/</link>
+    <link>https://unrealgt.github.io/advanced_examples/</link>
     <description>Recent content in Advanced Examples on Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 26 Jul 2019 14:26:15 +0200</lastBuildDate>
     
-	<atom:link href="https://lolleko.github.io/UnrealLab/advanced_examples/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://unrealgt.github.io/advanced_examples/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ORB-SLAM2</title>
-      <link>https://lolleko.github.io/UnrealLab/advanced_examples/orb-slam2/</link>
+      <link>https://unrealgt.github.io/advanced_examples/orb-slam2/</link>
       <pubDate>Fri, 26 Jul 2019 16:39:11 +0200</pubDate>
       
-      <guid>https://lolleko.github.io/UnrealLab/advanced_examples/orb-slam2/</guid>
+      <guid>https://unrealgt.github.io/advanced_examples/orb-slam2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>YOLO</title>
-      <link>https://lolleko.github.io/UnrealLab/advanced_examples/yolo/</link>
+      <link>https://unrealgt.github.io/advanced_examples/yolo/</link>
       <pubDate>Fri, 26 Jul 2019 16:38:50 +0200</pubDate>
       
-      <guid>https://lolleko.github.io/UnrealLab/advanced_examples/yolo/</guid>
+      <guid>https://unrealgt.github.io/advanced_examples/yolo/</guid>
       <description></description>
     </item>
     

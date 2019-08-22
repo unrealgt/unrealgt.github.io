@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Generators on Homepage</title>
-    <link>https://lolleko.github.io/UnrealLab/components/generators/</link>
+    <link>https://unrealgt.github.io/components/generators/</link>
     <description>Recent content in Generators on Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 20 Aug 2019 15:04:52 +0200</lastBuildDate>
     
-	<atom:link href="https://lolleko.github.io/UnrealLab/components/generators/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://unrealgt.github.io/components/generators/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Image</title>
-      <link>https://lolleko.github.io/UnrealLab/components/generators/image/</link>
+      <link>https://unrealgt.github.io/components/generators/image/</link>
       <pubDate>Tue, 20 Aug 2019 15:10:20 +0200</pubDate>
       
-      <guid>https://lolleko.github.io/UnrealLab/components/generators/image/</guid>
+      <guid>https://unrealgt.github.io/components/generators/image/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Depth</title>
-      <link>https://lolleko.github.io/UnrealLab/components/generators/depth/</link>
+      <link>https://unrealgt.github.io/components/generators/depth/</link>
       <pubDate>Tue, 20 Aug 2019 15:10:26 +0200</pubDate>
       
-      <guid>https://lolleko.github.io/UnrealLab/components/generators/depth/</guid>
+      <guid>https://unrealgt.github.io/components/generators/depth/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Normal</title>
-      <link>https://lolleko.github.io/UnrealLab/components/generators/normal/</link>
+      <link>https://unrealgt.github.io/components/generators/normal/</link>
       <pubDate>Tue, 20 Aug 2019 15:10:33 +0200</pubDate>
       
-      <guid>https://lolleko.github.io/UnrealLab/components/generators/normal/</guid>
+      <guid>https://unrealgt.github.io/components/generators/normal/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Segmentation</title>
-      <link>https://lolleko.github.io/UnrealLab/components/generators/segmentation/</link>
+      <link>https://unrealgt.github.io/components/generators/segmentation/</link>
       <pubDate>Tue, 20 Aug 2019 15:10:41 +0200</pubDate>
       
-      <guid>https://lolleko.github.io/UnrealLab/components/generators/segmentation/</guid>
+      <guid>https://unrealgt.github.io/components/generators/segmentation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Actorinfo</title>
-      <link>https://lolleko.github.io/UnrealLab/components/generators/actorinfo/</link>
+      <link>https://unrealgt.github.io/components/generators/actorinfo/</link>
       <pubDate>Tue, 20 Aug 2019 15:10:48 +0200</pubDate>
       
-      <guid>https://lolleko.github.io/UnrealLab/components/generators/actorinfo/</guid>
+      <guid>https://unrealgt.github.io/components/generators/actorinfo/</guid>
       <description></description>
     </item>
     
