@@ -1,0 +1,3 @@
+{{ range where $.Site.RegularPages "File.Dir" (.Get "dir") }}
+* [{{.Title}}]({{ .Permalink }})
+{{ end }}

@@ -14,4 +14,8 @@ Overview of the Generator Streamer System and the individual components.
 
 #### Data Generators
 
-#### Data Streamer
+{{% list_subpages dir="components/generator/" %}}
+
+#### Data Streamers
+
+{{% list_subpages dir="components/streamer/" %}}

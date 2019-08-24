@@ -4,11 +4,6 @@
         display: flex;
         align-items: center;
     }
-    @media only all and (max-width: 59.938em) {
-        figure.captionright {
-            flex-direction: column;
-        }
-    }
 
     figure.captionright a {
         flex: 1;
@@ -25,17 +20,23 @@
         line-height: 1.1;
         margin-top: 0;
     }
+
+    @media only all and (max-width: 59.938em) {
+        figure.captionright {
+            flex-direction: column;
+        }
+
+        figure.captionright figcaption {
+            margin-left: 0;
+        }
+    }
     
     figure.captionleft {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
     }
-    @media only all and (max-width: 59.938em) {
-        figure.captionleft {
-            flex-direction: column;
-        }
-    }
+
     figure.captionleft a {
         flex: 1;
     }
@@ -50,6 +51,20 @@
         opacity: 1.0;
         line-height: 1.1;
         margin-top: 0;
+    }
+
+    @media only all and (max-width: 59.938em) {
+        figure.captionleft {
+            flex-direction: column;
+        }
+
+        figure.captionleft figcaption {
+            margin-right: 0;
+        }
+    }
+
+    #chapter li p {
+        text-align: left;
     }
     
     {{if .IsHome}}
