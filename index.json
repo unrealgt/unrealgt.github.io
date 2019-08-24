@@ -1,6 +1,6 @@
 [
 {
-	"uri": "https://unrealgt.github.io/components/generators/image/",
+	"uri": "https://unrealgt.github.io/components/generator/image/",
 	"title": "Image",
 	"tags": [],
 	"description": "",
@@ -11,56 +11,56 @@
 	"title": "Installation",
 	"tags": [],
 	"description": "",
-	"content": "The only way to install the plugin currently is to build it from Source:\n Clone this repo and copy Plugins/ULab into your projects plugin Directory.\n Generate VisualStudio project files by right clicking your projects .uproject file.\n Launch the generated Solution\n Select DebugGameEditor or DevelopmentGameEditor as Target and Run the build.\n After the Editor has launched goto Edit \u0026gt; Plugins and enable the ULab plugin.\n  // TODO add prebuilt binary instructions?\n"
+	"content": " Requirements  Unreal Engine 4.21 or higher  Windows  Visual Studio 2017 or 2019 (2015 should work aswell but is not tested)  macOS  XCode Command Line Tools  Linux  Nothing if you already built the engine from source  Installation The only way to install the plugin is to build it from Source in an existing project. This requires you to build your project from source manually.\n Clone this repository into your projects plugin Directory.\n Generate the project files (Cmake, Visual Studio Solution, Vscode workspace\u0026hellip;) files by right clicking your projects .uproject file on Windows/macOS or by with GenerateProjectFiles.sh on linux.\n Build \u0026amp; Run the generated solution/cmake project from your IDE or the CLI.\nSelect DebugGameEditor or DevelopmentGameEditor as Target.\n After the Editor has launched goto Edit \u0026gt; Plugins and enable the UnrealGT plugin.\n  "
 },
 {
 	"uri": "https://unrealgt.github.io/basics/",
 	"title": "Basics",
 	"tags": [],
 	"description": "",
-	"content": " Chapter 1 Basics This chapter will guide you through the installation process and explains the basic usage of the Engine Plugin.\n"
+	"content": " Chapter 1 Basics The plugin adds components that allow you to extract data from an level inside the Unreal Engine. This chapter will guide you through the installation process for the plugin and features a basic example.\nThis guide assumes that you have basic knowledge of the Unreal Engine. If this is not the case head over to UE\u0026rsquo;s documentation first.\n"
 },
 {
-	"uri": "https://unrealgt.github.io/components/generators/depth/",
+	"uri": "https://unrealgt.github.io/components/generator/depth/",
 	"title": "Depth",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://unrealgt.github.io/components/generators/",
-	"title": "Generators",
+	"uri": "https://unrealgt.github.io/components/generator/",
+	"title": "Generator",
 	"tags": [],
 	"description": "",
-	"content": " Chapter 2.1 Generators Lorem Ipsum.\n"
+	"content": " Chapter 2.1 Generators TODO explain data generators in depth\nAvailable Generators  Image\n Depth\n Normal\n Segmentation\n Actorinfo\n  "
 },
 {
 	"uri": "https://unrealgt.github.io/components/",
 	"title": "Components",
 	"tags": [],
 	"description": "",
-	"content": " Chapter 2 Data Generators \u0026amp; Streamers Overview of the Generator Streamer System and the individual components.\nData Generators Data Streamer "
+	"content": " Chapter 2 Data Generators \u0026amp; Streamers Overview of the Generator Streamer System and the individual components.\nData Generators  Image\n Depth\n Normal\n Segmentation\n Actorinfo\n  Data Streamers  Tcp\n File\n  "
 },
 {
 	"uri": "https://unrealgt.github.io/basics/generating-the-first-images/",
 	"title": "Generating the First Images",
 	"tags": [],
 	"description": "",
-	"content": " Open a scene of your choice in the Editor.\n Right click in the content Browser and create a new Blueprint and choose Actor as base class.\n  Open your Blueprint in the editor.\n Add the following components to your created Blueprint: ULImageGenerator, ULFileStreamer, ULTimedCaptureTrigger and an optional ULCameraMovement\n  Component Configuration ULImageGenerator\nThe Image generator is responsible for generating pixel data from the scene.\nYou can configure the resolution and output image format. We use BMP as format in this example since it doesn\u0026rsquo;t require CPU heavy compression.\nKeep in mind that multiple image generators or high resolutions will degrade your performance at runtime, because each image generator requires it\u0026rsquo;s own render pass.\n ULFileStreamer\nA Streamer component streams generated Data. In this case the generated image will be streamed into a file.\nTo link the streamer with a generator select the image generator from the dropdown. If it doesn\u0026rsquo;t show up hit compile at the top and retry.\n You can also set the naming convention for the created files. You have access to {ID} and {Time} as variables. The files are stored inside your Projects Saved Directory in the ULab folder.\nULTimedCaptureTrigger\nThis component is responsible for triggering Data generation. Generator Components that should be triggered by this component, must be added to the TriggerComponents Array.\n In this case the generation is triggered at a fixed time interval which can be modified by changing the Frame Rate parameter 1/framerate = time between images in seconds. Be careful with high frame rates or the TriggerEveryFrame options as those will heavily degrade performance.\nULCameraMovement (optional)\nIf you don\u0026rsquo;t want to capture at a fixed location you can add a CameraMovementComponent to your blueprint. This component will add some basic movement capabilities to your Blueprint/Actor, which can be configured in the properties tab.\nWe choose the default Follow Main View as movement mode. (TODO movement mode will be an enum in the future update image)\n  Follow Main View will follow your main viewport camera/player Follow Actor will follow a actor, this actor can only be selected after the Blueprint has been placed in a level Follow Rail will follow a camera Rail Actor, you can configure the speed at which our Blueprint Actor will follow the rail.\nTutorial for camera rails: https://docs.unrealengine.com/en-us/Engine/Sequencer/HowTo/CameraRigRail you can skip 2-3. and 9.-16, we will use our blueprint as cine camera instead and the movement a long the rail is handled by this component not the sequencer.  Examples: https://github.com/lolleko/UnrealLab/tree/master/Plugins/ULab/Content/Examples\nFirst Test Once you configured your components save and compile your blueprint.\nDrag and drop your blueprint from the content browser into the scene. You should see a camera indicating the direction your ImageGenerator is going to record.\nStart the simulation and images should get generated in your Saved/ULab directory.\n"
+	"content": " The Plugin exposes a vereity of actor components, which can be used to generate data from the virtual world inside the Editor. The following will explain how to capture images data from within level.\nFirst open a level of your choice inside the unreal Editor.\n After that right click in the content browser to create a new Blueprint and choose Actor as base class.\n  Open the created Blueprint in the editor.\n And add the following components to your created Blueprint: ULImageGenerator, ULFileStreamer, ULTimedCaptureTrigger and an optional ULCameraMovement\n  Component Configuration ULImageGenerator\nThe Image generator is responsible for generating pixel data from the scene.\nYou can configure the resolution and output image format. We use BMP as format in this example since it doesn\u0026rsquo;t require CPU heavy compression.\nKeep in mind that multiple image generators or high resolutions will degrade your performance at runtime, because each image generator requires it\u0026rsquo;s own render pass.\n ULFileStreamer\nA Streamer component streams generated Data. In this case the generated image will be streamed into a file.\nTo link the streamer with a generator select the image generator from the dropdown.\nDue to a limitation the dropdown will only list components after the blueprint was compiled, so if your ImageGenerator doesn\u0026rsquo;t show up at first hit compile at the top and retry.\n You can also set the naming convention for the created files. You have access to {ID} and {Time} as variables. The files are stored inside your Projects Saved Directory in the ULab folder.\nULTimedCaptureTrigger\nThis component is responsible for triggering Data generation. Generators that should be triggered by this component, must be added to the Data Generators Array. Here we add our image generator to the Array.\n Generation is triggered at a fixed time interval which can be modified by changing the Frame Rate parameter 1/framerate = time between images in seconds. Be careful with high frame rates as those will heavily degrade performance.\nULCameraMovement (optional)\nIf you don\u0026rsquo;t want to capture at a fixed location you can add a CameraMovementComponent to your blueprint. This component will add some basic movement capabilities to your Blueprint/Actor, which can be configured in the properties tab.\nWe choose the default Follow Main View as movement mode. (TODO movement mode will be an enum in the future update image)\n  Follow Main View will follow your main viewport camera/player Follow Actor will follow a actor, this actor can only be selected after the Blueprint has been placed in a level Follow Rail will follow a camera Rail Actor, you can configure the speed at which our Blueprint Actor will follow the rail.\nTutorial for camera rails: https://docs.unrealengine.com/en-us/Engine/Sequencer/HowTo/CameraRigRail you can skip 2-3. and 9.-16, we will use our blueprint as cine camera instead and the movement a long the rail is handled by this component not the sequencer.  First Test Once you configured your components save and compile your blueprint.\nDrag and drop your blueprint from the content browser into the scene. You should see a camera indicating the direction your ImageGenerator is going to record.\nStart the simulation and images should get generated in your Saved/ULab directory.\n"
 },
 {
-	"uri": "https://unrealgt.github.io/components/generators/normal/",
+	"uri": "https://unrealgt.github.io/components/generator/normal/",
 	"title": "Normal",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://unrealgt.github.io/components/streamers/",
-	"title": "Streamers",
+	"uri": "https://unrealgt.github.io/components/streamer/",
+	"title": "Streamer",
 	"tags": [],
 	"description": "",
-	"content": " Chapter 2.2 Streamers Lorem Ipsum.\n"
+	"content": " Chapter 2.2 Streamers TODO explain data streamers in depth\nAvailable Streamers  Tcp\n File\n  "
 },
 {
 	"uri": "https://unrealgt.github.io/advanced_examples/",
@@ -77,15 +77,22 @@
 	"content": "Click the ULab Icon in the Toolbar to open the debug Window. Type the name of the generator component you want to debug into the text input to render debug info.\n "
 },
 {
-	"uri": "https://unrealgt.github.io/components/generators/segmentation/",
+	"uri": "https://unrealgt.github.io/components/generator/segmentation/",
 	"title": "Segmentation",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://unrealgt.github.io/components/generators/actorinfo/",
+	"uri": "https://unrealgt.github.io/components/generator/actorinfo/",
 	"title": "Actorinfo",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://unrealgt.github.io/components/streamer/tcp/",
+	"title": "Tcp",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -96,6 +103,13 @@
 	"tags": [],
 	"description": "",
 	"content": " By means of synthetic data generation, large amounts of image- and metadata can be extracted directly from a virtual scene, which in turn can be customized to meet the specific needs of the algorithm or the use-case. Furthermore, the use of virtual objects avoids problems that might arise due to data protec- tion issues and does not require the use of expensive sensors. We propose a framework for synthetic test data generation utilizing the Unreal Engine.\n Unreal EngineThe Unreal Engine provides a simulation environment that allows one to simulate complex situations in a virtual world, such as data acquisition with UAVs or autonomous diving.\n   Computer VisionBuilt-In Generators provide a large vareity of image generators. In addtion to basic color images, depth images, semantic segmenations, normal and depth maps. Image Generators can also be used in conjungtion to create multi camera setups.\n    Deep LearningGenerate accurate grountruth, for machine learning tasks. Bounding boxes, pose data(WIP) and various other properties of scene objects can be extracted\n   Fast Setup \u0026amp; ConfigurationBy utilizing the UI of the Unreal Editor complex data generation constructs can be created in minutes, without touching a single line of code.\n  Click here to get started!  -- "
+},
+{
+	"uri": "https://unrealgt.github.io/components/streamer/file/",
+	"title": "File",
+	"tags": [],
+	"description": "",
+	"content": ""
 },
 {
 	"uri": "https://unrealgt.github.io/advanced_examples/orb-slam2/",

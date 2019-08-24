@@ -12,20 +12,20 @@
     <title>Generating the First Images :: Homepage</title>
 
     
-    <link href="/css/nucleus.css?1566498934" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1566498934" rel="stylesheet">
-    <link href="/css/hybrid.css?1566498934" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1566498934" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1566498934" rel="stylesheet">
-    <link href="/css/auto-complete.css?1566498934" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1566498934" rel="stylesheet">
-    <link href="/css/theme.css?1566498934" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1566498934" rel="stylesheet">
+    <link href="/css/nucleus.css?1566677935" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1566677935" rel="stylesheet">
+    <link href="/css/hybrid.css?1566677935" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1566677935" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1566677935" rel="stylesheet">
+    <link href="/css/auto-complete.css?1566677935" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1566677935" rel="stylesheet">
+    <link href="/css/theme.css?1566677935" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1566677935" rel="stylesheet">
     
-      <link href="/css/theme-grey.css?1566498934" rel="stylesheet">
+      <link href="/css/theme-grey.css?1566677935" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1566498934"></script>
+    <script src="/js/jquery-3.3.1.min.js?1566677935"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -38,11 +38,6 @@
     figure.captionright {
         display: flex;
         align-items: center;
-    }
-    @media only all and (max-width: 59.938em) {
-        figure.captionright {
-            flex-direction: column;
-        }
     }
 
     figure.captionright a {
@@ -60,17 +55,23 @@
         line-height: 1.1;
         margin-top: 0;
     }
+
+    @media only all and (max-width: 59.938em) {
+        figure.captionright {
+            flex-direction: column;
+        }
+
+        figure.captionright figcaption {
+            margin-left: 0;
+        }
+    }
     
     figure.captionleft {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
     }
-    @media only all and (max-width: 59.938em) {
-        figure.captionleft {
-            flex-direction: column;
-        }
-    }
+
     figure.captionleft a {
         flex: 1;
     }
@@ -85,6 +86,20 @@
         opacity: 1.0;
         line-height: 1.1;
         margin-top: 0;
+    }
+
+    @media only all and (max-width: 59.938em) {
+        figure.captionleft {
+            flex-direction: column;
+        }
+
+        figure.captionleft figcaption {
+            margin-right: 0;
+        }
+    }
+
+    #chapter li p {
+        text-align: left;
     }
     
     
@@ -111,14 +126,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1566498934"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1566498934"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1566677935"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1566677935"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/unrealgt.github.io\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1566498934"></script>
+<script type="text/javascript" src="/js/search.js?1566677935"></script>
 
     
   </div>
@@ -250,13 +265,13 @@
  
   
     
-    <li data-nav-id="/components/generators/" title="Generators" class="dd-item 
+    <li data-nav-id="/components/generator/" title="Generator" class="dd-item 
         
         
         
         ">
-      <a href="/components/generators/">
-          <b>2.1 </b>Generators
+      <a href="/components/generator/">
+          <b>2.1 </b>Generator
           
       </a>
       
@@ -275,8 +290,8 @@
  
   
     
-      <li data-nav-id="/components/generators/image/" title="Image" class="dd-item ">
-        <a href="/components/generators/image/">
+      <li data-nav-id="/components/generator/image/" title="Image" class="dd-item ">
+        <a href="/components/generator/image/">
         Image
         
         </a>
@@ -294,8 +309,8 @@
  
   
     
-      <li data-nav-id="/components/generators/depth/" title="Depth" class="dd-item ">
-        <a href="/components/generators/depth/">
+      <li data-nav-id="/components/generator/depth/" title="Depth" class="dd-item ">
+        <a href="/components/generator/depth/">
         Depth
         
         </a>
@@ -313,8 +328,8 @@
  
   
     
-      <li data-nav-id="/components/generators/normal/" title="Normal" class="dd-item ">
-        <a href="/components/generators/normal/">
+      <li data-nav-id="/components/generator/normal/" title="Normal" class="dd-item ">
+        <a href="/components/generator/normal/">
         Normal
         
         </a>
@@ -332,8 +347,8 @@
  
   
     
-      <li data-nav-id="/components/generators/segmentation/" title="Segmentation" class="dd-item ">
-        <a href="/components/generators/segmentation/">
+      <li data-nav-id="/components/generator/segmentation/" title="Segmentation" class="dd-item ">
+        <a href="/components/generator/segmentation/">
         Segmentation
         
         </a>
@@ -351,8 +366,8 @@
  
   
     
-      <li data-nav-id="/components/generators/actorinfo/" title="Actorinfo" class="dd-item ">
-        <a href="/components/generators/actorinfo/">
+      <li data-nav-id="/components/generator/actorinfo/" title="Actorinfo" class="dd-item ">
+        <a href="/components/generator/actorinfo/">
         Actorinfo
         
         </a>
@@ -379,16 +394,64 @@
  
   
     
-    <li data-nav-id="/components/streamers/" title="Streamers" class="dd-item 
+    <li data-nav-id="/components/streamer/" title="Streamer" class="dd-item 
         
         
         
         ">
-      <a href="/components/streamers/">
-          <b>2.2 </b>Streamers
+      <a href="/components/streamer/">
+          <b>2.2 </b>Streamer
           
       </a>
       
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/components/streamer/tcp/" title="Tcp" class="dd-item ">
+        <a href="/components/streamer/tcp/">
+        Tcp
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/components/streamer/file/" title="File" class="dd-item ">
+        <a href="/components/streamer/file/">
+        File
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
               
     </li>
   
@@ -484,7 +547,7 @@
         <ul>
           
               <li> 
-                  <a class="padding" href="https://github.com/lolleko/UnrealLab"><i class='fab fa-github'></i> Github repo</a>
+                  <a class="padding" href="https://github.com/lolleko/UnrealGT"><i class='fab fa-github'></i> Github repo</a>
               </li>
           
               <li> 
@@ -594,22 +657,25 @@
 
 
 
-<p>Open a scene of your choice in the Editor.</p>
+<p>The Plugin exposes a vereity of actor components, which can be used to generate data from the virtual world inside the Editor.
+The following will explain how to capture images data from within level.</p>
+
+<p>First open a level of your choice inside the unreal Editor.</p>
 
 <figure class="captionright">
     <img src="../images/create_blueprint.png"
-         alt="Right click in the content Browser and create a new Blueprint and choose Actor as base class." height="300"/> <figcaption>
-            <p>Right click in the content Browser and create a new Blueprint and choose Actor as base class.</p>
+         alt="After that right click in the content browser to create a new Blueprint and choose Actor as base class." height="300"/> <figcaption>
+            <p>After that right click in the content browser to create a new Blueprint and choose <strong>Actor</strong> as base class.</p>
         </figcaption>
 </figure>
 
 
-<p>Open your Blueprint in the editor.</p>
+<p>Open the created Blueprint in the editor.</p>
 
 <figure class="captionleft">
     <img src="../images/add_components.png"
-         alt="Add the following components to your created Blueprint: ULImageGenerator, ULFileStreamer, ULTimedCaptureTrigger and an optional ULCameraMovement" height="300"/> <figcaption>
-            <p>Add the following components to your created Blueprint: ULImageGenerator, ULFileStreamer, ULTimedCaptureTrigger and an <strong>optional</strong> ULCameraMovement</p>
+         alt="And add the following components to your created Blueprint: ULImageGenerator, ULFileStreamer, ULTimedCaptureTrigger and an optional ULCameraMovement" height="300"/> <figcaption>
+            <p>And add the following components to your created Blueprint: <br>ULImageGenerator, ULFileStreamer, ULTimedCaptureTrigger and an <strong>optional</strong> ULCameraMovement</p>
         </figcaption>
 </figure>
 
@@ -632,7 +698,10 @@ Keep in mind that multiple image generators or high resolutions will degrade you
 
 <p>A Streamer component streams generated Data. In this case the generated image will be streamed into a file.</p>
 
-<p>To link the streamer with a generator select the image generator from the dropdown. If it doesn&rsquo;t show up hit compile at the top and retry.</p>
+<p>To link the streamer with a generator select the image generator from the dropdown.</p>
+
+<p>Due to a limitation the dropdown will only list components after the blueprint was compiled,
+so if your ImageGenerator doesn&rsquo;t show up at first hit compile at the top and retry.</p>
 
 <figure class="captionleft">
     <img src="../images/file_streamer_properties.png" height="300"/> 
@@ -646,15 +715,16 @@ The files are stored inside your Projects <code>Saved</code> Directory in the <c
 <p><strong>ULTimedCaptureTrigger</strong></p>
 
 <p>This component is responsible for triggering Data generation.
-Generator Components that should be triggered by this component, must be added to the TriggerComponents Array.</p>
+Generators that should be triggered by this component, must be added to the Data Generators Array.
+Here we add our image generator to the Array.</p>
 
 <figure class="captionleft">
     <img src="../images/timed_capture_properties.png" height="300"/> 
 </figure>
 
 
-<p>In this case the generation is triggered at a fixed time interval which can be modified by changing the Frame Rate parameter <code>1/framerate = time between images in seconds</code>.
-Be careful with high frame rates or the TriggerEveryFrame options as those will heavily degrade performance.</p>
+<p>Generation is triggered at a fixed time interval which can be modified by changing the Frame Rate parameter <code>1/framerate = time between images in seconds</code>.
+Be careful with high frame rates as those will heavily degrade performance.</p>
 
 <p><strong>ULCameraMovement (optional)</strong></p>
 
@@ -675,8 +745,6 @@ a CameraMovementComponent to your blueprint. This component will add some basic 
 <li><code>Follow Rail</code> will follow a camera Rail Actor, you can configure the speed at which our Blueprint Actor will follow the rail.<br />
 Tutorial for camera rails: <a href="https://docs.unrealengine.com/en-us/Engine/Sequencer/HowTo/CameraRigRail">https://docs.unrealengine.com/en-us/Engine/Sequencer/HowTo/CameraRigRail</a> you can skip 2-3. and 9.-16, we will use our blueprint as cine camera instead and the movement a long the rail is handled by this component not the sequencer.</li>
 </ul>
-
-<p>Examples: <a href="https://github.com/lolleko/UnrealLab/tree/master/Plugins/ULab/Content/Examples">https://github.com/lolleko/UnrealLab/tree/master/Plugins/ULab/Content/Examples</a></p>
 
 <h2 id="first-test">First Test</h2>
 
@@ -915,6 +983,38 @@ You should see a camera indicating the direction your ImageGenerator is going to
                     
 
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -991,20 +1091,19 @@ You should see a camera indicating the direction your ImageGenerator is going to
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1566498934"></script>
-    <script src="/js/perfect-scrollbar.min.js?1566498934"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1566498934"></script>
-    <script src="/js/jquery.sticky.js?1566498934"></script>
-    <script src="/js/featherlight.min.js?1566498934"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1566498934"></script>
-    <script src="/js/highlight.pack.js?1566498934"></script>
+    <script src="/js/clipboard.min.js?1566677935"></script>
+    <script src="/js/perfect-scrollbar.min.js?1566677935"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1566677935"></script>
+    <script src="/js/jquery.sticky.js?1566677935"></script>
+    <script src="/js/featherlight.min.js?1566677935"></script>
+    <script src="/js/highlight.pack.js?1566677935"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1566498934"></script>
-    <script src="/js/learn.js?1566498934"></script>
-    <script src="/js/hugo-learn.js?1566498934"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1566677935"></script>
+    <script src="/js/learn.js?1566677935"></script>
+    <script src="/js/hugo-learn.js?1566677935"></script>
 
-    <link href="/mermaid/mermaid.css?1566498934" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1566498934"></script>
+    <link href="/mermaid/mermaid.css?1566677935" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1566677935"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

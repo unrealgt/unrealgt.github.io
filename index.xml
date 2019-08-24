@@ -6,17 +6,17 @@
     <description>Recent content in Unreal GT on Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Aug 2019 15:10:48 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 20 Aug 2019 15:11:18 +0200</lastBuildDate>
     
 	<atom:link href="https://unrealgt.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Image</title>
-      <link>https://unrealgt.github.io/components/generators/image/</link>
+      <link>https://unrealgt.github.io/components/generator/image/</link>
       <pubDate>Tue, 20 Aug 2019 15:10:20 +0200</pubDate>
       
-      <guid>https://unrealgt.github.io/components/generators/image/</guid>
+      <guid>https://unrealgt.github.io/components/generator/image/</guid>
       <description></description>
     </item>
     
@@ -26,21 +26,15 @@
       <pubDate>Fri, 26 Jul 2019 14:14:04 +0200</pubDate>
       
       <guid>https://unrealgt.github.io/basics/installation/</guid>
-      <description>The only way to install the plugin currently is to build it from Source:
- Clone this repo and copy Plugins/ULab into your projects plugin Directory.
- Generate VisualStudio project files by right clicking your projects .uproject file.
- Launch the generated Solution
- Select DebugGameEditor or DevelopmentGameEditor as Target and Run the build.
- After the Editor has launched goto Edit &amp;gt; Plugins and enable the ULab plugin.
-  // TODO add prebuilt binary instructions?</description>
+      <description>Requirements  Unreal Engine 4.21 or higher  Windows  Visual Studio 2017 or 2019 (2015 should work aswell but is not tested)  macOS  XCode Command Line Tools  Linux  Nothing if you already built the engine from source  Installation The only way to install the plugin is to build it from Source in an existing project. This requires you to build your project from source manually.</description>
     </item>
     
     <item>
       <title>Depth</title>
-      <link>https://unrealgt.github.io/components/generators/depth/</link>
+      <link>https://unrealgt.github.io/components/generator/depth/</link>
       <pubDate>Tue, 20 Aug 2019 15:10:26 +0200</pubDate>
       
-      <guid>https://unrealgt.github.io/components/generators/depth/</guid>
+      <guid>https://unrealgt.github.io/components/generator/depth/</guid>
       <description></description>
     </item>
     
@@ -50,21 +44,18 @@
       <pubDate>Fri, 26 Jul 2019 14:20:36 +0200</pubDate>
       
       <guid>https://unrealgt.github.io/basics/generating-the-first-images/</guid>
-      <description>Open a scene of your choice in the Editor.
- Right click in the content Browser and create a new Blueprint and choose Actor as base class.
-  Open your Blueprint in the editor.
- Add the following components to your created Blueprint: ULImageGenerator, ULFileStreamer, ULTimedCaptureTrigger and an optional ULCameraMovement
-  Component Configuration ULImageGenerator
-The Image generator is responsible for generating pixel data from the scene.
-You can configure the resolution and output image format.</description>
+      <description>The Plugin exposes a vereity of actor components, which can be used to generate data from the virtual world inside the Editor. The following will explain how to capture images data from within level.
+First open a level of your choice inside the unreal Editor.
+ After that right click in the content browser to create a new Blueprint and choose Actor as base class.
+  Open the created Blueprint in the editor.</description>
     </item>
     
     <item>
       <title>Normal</title>
-      <link>https://unrealgt.github.io/components/generators/normal/</link>
+      <link>https://unrealgt.github.io/components/generator/normal/</link>
       <pubDate>Tue, 20 Aug 2019 15:10:33 +0200</pubDate>
       
-      <guid>https://unrealgt.github.io/components/generators/normal/</guid>
+      <guid>https://unrealgt.github.io/components/generator/normal/</guid>
       <description></description>
     </item>
     
@@ -80,19 +71,37 @@ You can configure the resolution and output image format.</description>
     
     <item>
       <title>Segmentation</title>
-      <link>https://unrealgt.github.io/components/generators/segmentation/</link>
+      <link>https://unrealgt.github.io/components/generator/segmentation/</link>
       <pubDate>Tue, 20 Aug 2019 15:10:41 +0200</pubDate>
       
-      <guid>https://unrealgt.github.io/components/generators/segmentation/</guid>
+      <guid>https://unrealgt.github.io/components/generator/segmentation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Actorinfo</title>
-      <link>https://unrealgt.github.io/components/generators/actorinfo/</link>
+      <link>https://unrealgt.github.io/components/generator/actorinfo/</link>
       <pubDate>Tue, 20 Aug 2019 15:10:48 +0200</pubDate>
       
-      <guid>https://unrealgt.github.io/components/generators/actorinfo/</guid>
+      <guid>https://unrealgt.github.io/components/generator/actorinfo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tcp</title>
+      <link>https://unrealgt.github.io/components/streamer/tcp/</link>
+      <pubDate>Tue, 20 Aug 2019 15:11:18 +0200</pubDate>
+      
+      <guid>https://unrealgt.github.io/components/streamer/tcp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>File</title>
+      <link>https://unrealgt.github.io/components/streamer/file/</link>
+      <pubDate>Tue, 20 Aug 2019 15:11:07 +0200</pubDate>
+      
+      <guid>https://unrealgt.github.io/components/streamer/file/</guid>
       <description></description>
     </item>
     

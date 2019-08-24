@@ -9,15 +9,15 @@
   <title>404 Page not found</title>
 
    
-    <link href="/css/nucleus.css?1566498934" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1566498934" rel="stylesheet">
-    <link href="/css/hybrid.css?1566498934" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1566498934" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1566498934" rel="stylesheet">
-    <link href="/css/theme.css?1566498934" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1566498934" rel="stylesheet">
+    <link href="/css/nucleus.css?1566677935" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1566677935" rel="stylesheet">
+    <link href="/css/hybrid.css?1566677935" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1566677935" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1566677935" rel="stylesheet">
+    <link href="/css/theme.css?1566677935" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1566677935" rel="stylesheet">
     
-      <link href="/css/theme-grey.css?1566498934" rel="stylesheet">
+      <link href="/css/theme-grey.css?1566677935" rel="stylesheet">
     
 <style>
     :root #header + #content > #left > #rlblock_left {
@@ -40,11 +40,6 @@
         display: flex;
         align-items: center;
     }
-    @media only all and (max-width: 59.938em) {
-        figure.captionright {
-            flex-direction: column;
-        }
-    }
 
     figure.captionright a {
         flex: 1;
@@ -61,17 +56,23 @@
         line-height: 1.1;
         margin-top: 0;
     }
+
+    @media only all and (max-width: 59.938em) {
+        figure.captionright {
+            flex-direction: column;
+        }
+
+        figure.captionright figcaption {
+            margin-left: 0;
+        }
+    }
     
     figure.captionleft {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
     }
-    @media only all and (max-width: 59.938em) {
-        figure.captionleft {
-            flex-direction: column;
-        }
-    }
+
     figure.captionleft a {
         flex: 1;
     }
@@ -86,6 +87,20 @@
         opacity: 1.0;
         line-height: 1.1;
         margin-top: 0;
+    }
+
+    @media only all and (max-width: 59.938em) {
+        figure.captionleft {
+            flex-direction: column;
+        }
+
+        figure.captionleft figcaption {
+            margin-right: 0;
+        }
+    }
+
+    #chapter li p {
+        text-align: left;
     }
     
     

@@ -17,13 +17,7 @@
       <pubDate>Fri, 26 Jul 2019 14:14:04 +0200</pubDate>
       
       <guid>https://unrealgt.github.io/basics/installation/</guid>
-      <description>The only way to install the plugin currently is to build it from Source:
- Clone this repo and copy Plugins/ULab into your projects plugin Directory.
- Generate VisualStudio project files by right clicking your projects .uproject file.
- Launch the generated Solution
- Select DebugGameEditor or DevelopmentGameEditor as Target and Run the build.
- After the Editor has launched goto Edit &amp;gt; Plugins and enable the ULab plugin.
-  // TODO add prebuilt binary instructions?</description>
+      <description>Requirements  Unreal Engine 4.21 or higher  Windows  Visual Studio 2017 or 2019 (2015 should work aswell but is not tested)  macOS  XCode Command Line Tools  Linux  Nothing if you already built the engine from source  Installation The only way to install the plugin is to build it from Source in an existing project. This requires you to build your project from source manually.</description>
     </item>
     
     <item>
@@ -32,13 +26,10 @@
       <pubDate>Fri, 26 Jul 2019 14:20:36 +0200</pubDate>
       
       <guid>https://unrealgt.github.io/basics/generating-the-first-images/</guid>
-      <description>Open a scene of your choice in the Editor.
- Right click in the content Browser and create a new Blueprint and choose Actor as base class.
-  Open your Blueprint in the editor.
- Add the following components to your created Blueprint: ULImageGenerator, ULFileStreamer, ULTimedCaptureTrigger and an optional ULCameraMovement
-  Component Configuration ULImageGenerator
-The Image generator is responsible for generating pixel data from the scene.
-You can configure the resolution and output image format.</description>
+      <description>The Plugin exposes a vereity of actor components, which can be used to generate data from the virtual world inside the Editor. The following will explain how to capture images data from within level.
+First open a level of your choice inside the unreal Editor.
+ After that right click in the content browser to create a new Blueprint and choose Actor as base class.
+  Open the created Blueprint in the editor.</description>
     </item>
     
     <item>

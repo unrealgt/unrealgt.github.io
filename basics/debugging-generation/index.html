@@ -12,20 +12,20 @@
     <title>Debugging Generation :: Homepage</title>
 
     
-    <link href="/css/nucleus.css?1566498934" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1566498934" rel="stylesheet">
-    <link href="/css/hybrid.css?1566498934" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1566498934" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1566498934" rel="stylesheet">
-    <link href="/css/auto-complete.css?1566498934" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1566498934" rel="stylesheet">
-    <link href="/css/theme.css?1566498934" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1566498934" rel="stylesheet">
+    <link href="/css/nucleus.css?1566677935" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1566677935" rel="stylesheet">
+    <link href="/css/hybrid.css?1566677935" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1566677935" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1566677935" rel="stylesheet">
+    <link href="/css/auto-complete.css?1566677935" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1566677935" rel="stylesheet">
+    <link href="/css/theme.css?1566677935" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1566677935" rel="stylesheet">
     
-      <link href="/css/theme-grey.css?1566498934" rel="stylesheet">
+      <link href="/css/theme-grey.css?1566677935" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1566498934"></script>
+    <script src="/js/jquery-3.3.1.min.js?1566677935"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -38,11 +38,6 @@
     figure.captionright {
         display: flex;
         align-items: center;
-    }
-    @media only all and (max-width: 59.938em) {
-        figure.captionright {
-            flex-direction: column;
-        }
     }
 
     figure.captionright a {
@@ -60,17 +55,23 @@
         line-height: 1.1;
         margin-top: 0;
     }
+
+    @media only all and (max-width: 59.938em) {
+        figure.captionright {
+            flex-direction: column;
+        }
+
+        figure.captionright figcaption {
+            margin-left: 0;
+        }
+    }
     
     figure.captionleft {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
     }
-    @media only all and (max-width: 59.938em) {
-        figure.captionleft {
-            flex-direction: column;
-        }
-    }
+
     figure.captionleft a {
         flex: 1;
     }
@@ -85,6 +86,20 @@
         opacity: 1.0;
         line-height: 1.1;
         margin-top: 0;
+    }
+
+    @media only all and (max-width: 59.938em) {
+        figure.captionleft {
+            flex-direction: column;
+        }
+
+        figure.captionleft figcaption {
+            margin-right: 0;
+        }
+    }
+
+    #chapter li p {
+        text-align: left;
     }
     
     
@@ -111,14 +126,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1566498934"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1566498934"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1566677935"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1566677935"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/unrealgt.github.io\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1566498934"></script>
+<script type="text/javascript" src="/js/search.js?1566677935"></script>
 
     
   </div>
@@ -250,13 +265,13 @@
  
   
     
-    <li data-nav-id="/components/generators/" title="Generators" class="dd-item 
+    <li data-nav-id="/components/generator/" title="Generator" class="dd-item 
         
         
         
         ">
-      <a href="/components/generators/">
-          <b>2.1 </b>Generators
+      <a href="/components/generator/">
+          <b>2.1 </b>Generator
           
       </a>
       
@@ -275,8 +290,8 @@
  
   
     
-      <li data-nav-id="/components/generators/image/" title="Image" class="dd-item ">
-        <a href="/components/generators/image/">
+      <li data-nav-id="/components/generator/image/" title="Image" class="dd-item ">
+        <a href="/components/generator/image/">
         Image
         
         </a>
@@ -294,8 +309,8 @@
  
   
     
-      <li data-nav-id="/components/generators/depth/" title="Depth" class="dd-item ">
-        <a href="/components/generators/depth/">
+      <li data-nav-id="/components/generator/depth/" title="Depth" class="dd-item ">
+        <a href="/components/generator/depth/">
         Depth
         
         </a>
@@ -313,8 +328,8 @@
  
   
     
-      <li data-nav-id="/components/generators/normal/" title="Normal" class="dd-item ">
-        <a href="/components/generators/normal/">
+      <li data-nav-id="/components/generator/normal/" title="Normal" class="dd-item ">
+        <a href="/components/generator/normal/">
         Normal
         
         </a>
@@ -332,8 +347,8 @@
  
   
     
-      <li data-nav-id="/components/generators/segmentation/" title="Segmentation" class="dd-item ">
-        <a href="/components/generators/segmentation/">
+      <li data-nav-id="/components/generator/segmentation/" title="Segmentation" class="dd-item ">
+        <a href="/components/generator/segmentation/">
         Segmentation
         
         </a>
@@ -351,8 +366,8 @@
  
   
     
-      <li data-nav-id="/components/generators/actorinfo/" title="Actorinfo" class="dd-item ">
-        <a href="/components/generators/actorinfo/">
+      <li data-nav-id="/components/generator/actorinfo/" title="Actorinfo" class="dd-item ">
+        <a href="/components/generator/actorinfo/">
         Actorinfo
         
         </a>
@@ -379,16 +394,64 @@
  
   
     
-    <li data-nav-id="/components/streamers/" title="Streamers" class="dd-item 
+    <li data-nav-id="/components/streamer/" title="Streamer" class="dd-item 
         
         
         
         ">
-      <a href="/components/streamers/">
-          <b>2.2 </b>Streamers
+      <a href="/components/streamer/">
+          <b>2.2 </b>Streamer
           
       </a>
       
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/components/streamer/tcp/" title="Tcp" class="dd-item ">
+        <a href="/components/streamer/tcp/">
+        Tcp
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/components/streamer/file/" title="File" class="dd-item ">
+        <a href="/components/streamer/file/">
+        File
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
               
     </li>
   
@@ -484,7 +547,7 @@
         <ul>
           
               <li> 
-                  <a class="padding" href="https://github.com/lolleko/UnrealLab"><i class='fab fa-github'></i> Github repo</a>
+                  <a class="padding" href="https://github.com/lolleko/UnrealGT"><i class='fab fa-github'></i> Github repo</a>
               </li>
           
               <li> 
@@ -820,6 +883,38 @@ Type the name of the generator component you want to debug into the text input t
                     
 
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -896,20 +991,19 @@ Type the name of the generator component you want to debug into the text input t
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1566498934"></script>
-    <script src="/js/perfect-scrollbar.min.js?1566498934"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1566498934"></script>
-    <script src="/js/jquery.sticky.js?1566498934"></script>
-    <script src="/js/featherlight.min.js?1566498934"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1566498934"></script>
-    <script src="/js/highlight.pack.js?1566498934"></script>
+    <script src="/js/clipboard.min.js?1566677935"></script>
+    <script src="/js/perfect-scrollbar.min.js?1566677935"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1566677935"></script>
+    <script src="/js/jquery.sticky.js?1566677935"></script>
+    <script src="/js/featherlight.min.js?1566677935"></script>
+    <script src="/js/highlight.pack.js?1566677935"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1566498934"></script>
-    <script src="/js/learn.js?1566498934"></script>
-    <script src="/js/hugo-learn.js?1566498934"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1566677935"></script>
+    <script src="/js/learn.js?1566677935"></script>
+    <script src="/js/hugo-learn.js?1566677935"></script>
 
-    <link href="/mermaid/mermaid.css?1566498934" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1566498934"></script>
+    <link href="/mermaid/mermaid.css?1566677935" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1566677935"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

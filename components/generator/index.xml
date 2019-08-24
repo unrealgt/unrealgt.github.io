@@ -1,58 +1,58 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Generators on Homepage</title>
-    <link>https://unrealgt.github.io/components/generators/</link>
-    <description>Recent content in Generators on Homepage</description>
+    <title>Generator on Homepage</title>
+    <link>https://unrealgt.github.io/components/generator/</link>
+    <description>Recent content in Generator on Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 20 Aug 2019 15:04:52 +0200</lastBuildDate>
     
-	<atom:link href="https://unrealgt.github.io/components/generators/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://unrealgt.github.io/components/generator/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Image</title>
-      <link>https://unrealgt.github.io/components/generators/image/</link>
+      <link>https://unrealgt.github.io/components/generator/image/</link>
       <pubDate>Tue, 20 Aug 2019 15:10:20 +0200</pubDate>
       
-      <guid>https://unrealgt.github.io/components/generators/image/</guid>
+      <guid>https://unrealgt.github.io/components/generator/image/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Depth</title>
-      <link>https://unrealgt.github.io/components/generators/depth/</link>
+      <link>https://unrealgt.github.io/components/generator/depth/</link>
       <pubDate>Tue, 20 Aug 2019 15:10:26 +0200</pubDate>
       
-      <guid>https://unrealgt.github.io/components/generators/depth/</guid>
+      <guid>https://unrealgt.github.io/components/generator/depth/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Normal</title>
-      <link>https://unrealgt.github.io/components/generators/normal/</link>
+      <link>https://unrealgt.github.io/components/generator/normal/</link>
       <pubDate>Tue, 20 Aug 2019 15:10:33 +0200</pubDate>
       
-      <guid>https://unrealgt.github.io/components/generators/normal/</guid>
+      <guid>https://unrealgt.github.io/components/generator/normal/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Segmentation</title>
-      <link>https://unrealgt.github.io/components/generators/segmentation/</link>
+      <link>https://unrealgt.github.io/components/generator/segmentation/</link>
       <pubDate>Tue, 20 Aug 2019 15:10:41 +0200</pubDate>
       
-      <guid>https://unrealgt.github.io/components/generators/segmentation/</guid>
+      <guid>https://unrealgt.github.io/components/generator/segmentation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Actorinfo</title>
-      <link>https://unrealgt.github.io/components/generators/actorinfo/</link>
+      <link>https://unrealgt.github.io/components/generator/actorinfo/</link>
       <pubDate>Tue, 20 Aug 2019 15:10:48 +0200</pubDate>
       
-      <guid>https://unrealgt.github.io/components/generators/actorinfo/</guid>
+      <guid>https://unrealgt.github.io/components/generator/actorinfo/</guid>
       <description></description>
     </item>
     

@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://unrealgt.github.io/components/generators/image/</loc>
+    <loc>https://unrealgt.github.io/components/generator/image/</loc>
     <lastmod>2019-08-20T15:10:20+02:00</lastmod>
   </url>
   
@@ -18,12 +18,12 @@
   </url>
   
   <url>
-    <loc>https://unrealgt.github.io/components/generators/depth/</loc>
+    <loc>https://unrealgt.github.io/components/generator/depth/</loc>
     <lastmod>2019-08-20T15:10:26+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://unrealgt.github.io/components/generators/</loc>
+    <loc>https://unrealgt.github.io/components/generator/</loc>
     <lastmod>2019-08-20T15:04:52+02:00</lastmod>
   </url>
   
@@ -38,12 +38,12 @@
   </url>
   
   <url>
-    <loc>https://unrealgt.github.io/components/generators/normal/</loc>
+    <loc>https://unrealgt.github.io/components/generator/normal/</loc>
     <lastmod>2019-08-20T15:10:33+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://unrealgt.github.io/components/streamers/</loc>
+    <loc>https://unrealgt.github.io/components/streamer/</loc>
     <lastmod>2019-08-20T15:05:06+02:00</lastmod>
   </url>
   
@@ -58,18 +58,28 @@
   </url>
   
   <url>
-    <loc>https://unrealgt.github.io/components/generators/segmentation/</loc>
+    <loc>https://unrealgt.github.io/components/generator/segmentation/</loc>
     <lastmod>2019-08-20T15:10:41+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://unrealgt.github.io/components/generators/actorinfo/</loc>
+    <loc>https://unrealgt.github.io/components/generator/actorinfo/</loc>
     <lastmod>2019-08-20T15:10:48+02:00</lastmod>
   </url>
   
   <url>
+    <loc>https://unrealgt.github.io/components/streamer/tcp/</loc>
+    <lastmod>2019-08-20T15:11:18+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://unrealgt.github.io/</loc>
-    <lastmod>2019-08-20T15:10:48+02:00</lastmod>
+    <lastmod>2019-08-20T15:11:18+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://unrealgt.github.io/components/streamer/file/</loc>
+    <lastmod>2019-08-20T15:11:07+02:00</lastmod>
   </url>
   
   <url>
