@@ -1,5 +1,5 @@
 ---
-title: "Generating the First Images"
+title: "Getting Started"
 date: 2019-07-26T14:20:36+02:00
 draft: false
 weight: 2
@@ -76,3 +76,10 @@ Drag and drop your blueprint from the content browser into the scene.
 You should see a camera indicating the direction your ImageGenerator is going to record.
 
 Start the simulation and images should get generated in your `Saved/ULab` directory.
+
+## Examples
+
+You can find the Blueprint described in this Tutorial and additional examples in
+https://github.com/lolleko/UnrealGT/tree/master/Content/Examples.
+
+To view the examples in the editor enable "Show Plugin Content" in the content browser's view options.
