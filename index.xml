@@ -39,11 +39,11 @@
     </item>
     
     <item>
-      <title>Generating the First Images</title>
-      <link>https://unrealgt.github.io/basics/generating-the-first-images/</link>
+      <title>Getting Started</title>
+      <link>https://unrealgt.github.io/basics/getting-started/</link>
       <pubDate>Fri, 26 Jul 2019 14:20:36 +0200</pubDate>
       
-      <guid>https://unrealgt.github.io/basics/generating-the-first-images/</guid>
+      <guid>https://unrealgt.github.io/basics/getting-started/</guid>
       <description>The Plugin exposes a vereity of actor components, which can be used to generate data from the virtual world inside the Editor. The following will explain how to capture images data from within level.
 First open a level of your choice inside the unreal Editor.
  After that right click in the content browser to create a new Blueprint and choose Actor as base class.

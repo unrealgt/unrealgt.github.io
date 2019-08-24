@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Debugging Generation :: Homepage</title>
+    <title>Getting Started :: Homepage</title>
 
     
     <link href="/css/nucleus.css?1566678401" rel="stylesheet">
@@ -106,7 +106,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/basics/debugging-generation/">
+  <body class="" data-url="/basics/getting-started/">
     <nav id="sidebar" class="">
 
 
@@ -193,7 +193,7 @@
  
   
     
-      <li data-nav-id="/basics/getting-started/" title="Getting Started" class="dd-item ">
+      <li data-nav-id="/basics/getting-started/" title="Getting Started" class="dd-item active">
         <a href="/basics/getting-started/">
         Getting Started
         
@@ -212,7 +212,7 @@
  
   
     
-      <li data-nav-id="/basics/debugging-generation/" title="Debugging Generation" class="dd-item active">
+      <li data-nav-id="/basics/debugging-generation/" title="Debugging Generation" class="dd-item ">
         <a href="/basics/debugging-generation/">
         Debugging Generation
         
@@ -610,7 +610,7 @@
             
           
           
-            <a href='/'>Unreal GT</a> > <a href='/basics/'>Basics</a> > Debugging Generation
+            <a href='/'>Unreal GT</a> > <a href='/basics/'>Basics</a> > Getting Started
           
          
           
@@ -623,7 +623,16 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#component-configuration">Component Configuration</a></li>
+<li><a href="#first-test">First Test</a></li>
+<li><a href="#examples">Examples</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -639,7 +648,7 @@
           
             <h1>
               
-              Debugging Generation
+              Getting Started
             </h1>
           
 
@@ -647,13 +656,112 @@
 
 
 
-<p>Click the ULab Icon in the Toolbar to open the debug Window.
-Type the name of the generator component you want to debug into the text input to render debug info.</p>
 
-<figure class="captionleft">
-    <img src="../images/debugwindow.png" height="300"/> 
+
+<p>The Plugin exposes a vereity of actor components, which can be used to generate data from the virtual world inside the Editor.
+The following will explain how to capture images data from within level.</p>
+
+<p>First open a level of your choice inside the unreal Editor.</p>
+
+<figure class="captionright">
+    <img src="../images/create_blueprint.png"
+         alt="After that right click in the content browser to create a new Blueprint and choose Actor as base class." height="300"/> <figcaption>
+            <p>After that right click in the content browser to create a new Blueprint and choose <strong>Actor</strong> as base class.</p>
+        </figcaption>
 </figure>
 
+
+<p>Open the created Blueprint in the editor.</p>
+
+<figure class="captionleft">
+    <img src="../images/add_components.png"
+         alt="And add the following components to your created Blueprint: ULImageGenerator, ULFileStreamer, ULTimedCaptureTrigger and an optional ULCameraMovement" height="300"/> <figcaption>
+            <p>And add the following components to your created Blueprint: <br>ULImageGenerator, ULFileStreamer, ULTimedCaptureTrigger and an <strong>optional</strong> ULCameraMovement</p>
+        </figcaption>
+</figure>
+
+
+<h2 id="component-configuration">Component Configuration</h2>
+
+<p><strong>ULImageGenerator</strong></p>
+
+<p>The Image generator is responsible for generating pixel data from the scene.<br />
+You can configure the resolution and output image format.
+We use BMP as format in this example since it doesn&rsquo;t require CPU heavy compression.<br />
+Keep in mind that multiple image generators or high resolutions will degrade your performance at runtime, because each image generator requires it&rsquo;s own render pass.</p>
+
+<figure class="captionleft">
+    <img src="../images/image_generator_properties.png" height="300"/> 
+</figure>
+
+
+<p><strong>ULFileStreamer</strong></p>
+
+<p>A Streamer component streams generated Data. In this case the generated image will be streamed into a file.</p>
+
+<p>To link the streamer with a generator select the image generator from the dropdown.</p>
+
+<p>Due to a limitation the dropdown will only list components after the blueprint was compiled,
+so if your ImageGenerator doesn&rsquo;t show up at first hit compile at the top and retry.</p>
+
+<figure class="captionleft">
+    <img src="../images/file_streamer_properties.png" height="300"/> 
+</figure>
+
+
+<p>You can also set the naming convention for the created files.
+You have access to <code>{ID}</code> and <code>{Time}</code> as variables.
+The files are stored inside your Projects <code>Saved</code> Directory in the <code>ULab</code> folder.</p>
+
+<p><strong>ULTimedCaptureTrigger</strong></p>
+
+<p>This component is responsible for triggering Data generation.
+Generators that should be triggered by this component, must be added to the Data Generators Array.
+Here we add our image generator to the Array.</p>
+
+<figure class="captionleft">
+    <img src="../images/timed_capture_properties.png" height="300"/> 
+</figure>
+
+
+<p>Generation is triggered at a fixed time interval which can be modified by changing the Frame Rate parameter <code>1/framerate = time between images in seconds</code>.
+Be careful with high frame rates as those will heavily degrade performance.</p>
+
+<p><strong>ULCameraMovement (optional)</strong></p>
+
+<p>If you don&rsquo;t want to capture at a fixed location you can add
+a CameraMovementComponent to your blueprint. This component will add some basic movement capabilities to your Blueprint/Actor, which can be configured in the properties tab.</p>
+
+<p>We choose the default Follow Main View as movement mode.
+(TODO movement mode will be an enum in the future update image)</p>
+
+<figure class="captionleft">
+    <img src="../images/camera_movement_properties.png" height="300"/> 
+</figure>
+
+
+<ul>
+<li><code>Follow Main View</code> will follow your main viewport camera/player</li>
+<li><code>Follow Actor</code> will follow a actor, this actor can only be selected after the Blueprint has been placed in a level</li>
+<li><code>Follow Rail</code> will follow a camera Rail Actor, you can configure the speed at which our Blueprint Actor will follow the rail.<br />
+Tutorial for camera rails: <a href="https://docs.unrealengine.com/en-us/Engine/Sequencer/HowTo/CameraRigRail">https://docs.unrealengine.com/en-us/Engine/Sequencer/HowTo/CameraRigRail</a> you can skip 2-3. and 9.-16, we will use our blueprint as cine camera instead and the movement a long the rail is handled by this component not the sequencer.</li>
+</ul>
+
+<h2 id="first-test">First Test</h2>
+
+<p>Once you configured your components save and compile your blueprint.</p>
+
+<p>Drag and drop your blueprint from the content browser into the scene.
+You should see a camera indicating the direction your ImageGenerator is going to record.</p>
+
+<p>Start the simulation and images should get generated in your <code>Saved/ULab</code> directory.</p>
+
+<h2 id="examples">Examples</h2>
+
+<p>You can find the Blueprint described in this Tutorial and additional examples in
+<a href="https://github.com/lolleko/UnrealGT/tree/master/Content/Examples">https://github.com/lolleko/UnrealGT/tree/master/Content/Examples</a>.</p>
+
+<p>To view the examples in the editor enable &ldquo;Show Plugin Content&rdquo; in the content browser&rsquo;s view options.</p>
 
 
 <footer class=" footline" >
@@ -725,22 +833,6 @@ Type the name of the generator component you want to debug into the text input t
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                     
                 
                 
@@ -753,9 +845,6 @@ Type the name of the generator component you want to debug into the text input t
             
         
                     
-            
-        
-                    
                         
             
             
@@ -763,6 +852,25 @@ Type the name of the generator component you want to debug into the text input t
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -978,10 +1086,10 @@ Type the name of the generator component you want to debug into the text input t
 	 
 	 
 		
-			<a class="nav nav-prev" href="/basics/getting-started/" title="Getting Started"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/basics/installation/" title="Installation"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/components/" title="Components" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/basics/debugging-generation/" title="Debugging Generation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
