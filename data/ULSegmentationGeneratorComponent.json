@@ -1,0 +1,18 @@
+{
+    "filename": "/Users/lmbp/projects/github/UnrealLab/Plugins/ULab/Source/ULab/Public/Generators/Image/ULSegmentationGeneratorComponent.h",
+    "description": "",
+    "properties": [
+        {
+            "description": "",
+            "category": "Segmentaiton",
+            "propType": "TMap<FULObjectFilter, FColor>",
+            "name": " ComponentToColor"
+        },
+        {
+            "description": "",
+            "category": "Segmentaiton",
+            "propType": "bool",
+            "name": " bShouldApplyCloseMorph"
+        }
+    ]
+}

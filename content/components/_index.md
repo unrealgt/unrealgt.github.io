@@ -12,10 +12,5 @@ pre = "<b>2. </b>"
 
 Overview of the Generator Streamer System and the individual components.
 
-#### Data Generators
+{{% children depth="2"%}}
 
-{{% list_subpages dir="components/generator/" %}}
-
-#### Data Streamers
-
-{{% list_subpages dir="components/streamer/" %}}

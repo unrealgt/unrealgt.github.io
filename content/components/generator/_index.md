@@ -14,4 +14,4 @@ TODO explain data generators in depth
 
 #### Available Generators
 
-{{% list_subpages dir="components/generator/" %}}
+{{% children  %}}

@@ -1,0 +1,90 @@
+{
+    "filename": "/Users/lmbp/projects/github/UnrealLab/Plugins/ULab/Source/ULab/Public/Misc/ULRandomObjectPlacer.h",
+    "description": "",
+    "properties": [
+        {
+            "description": "",
+            "category": "",
+            "propType": "UStaticMesh*",
+            "name": " Mesh"
+        },
+        {
+            "description": "",
+            "category": "",
+            "propType": "float",
+            "name": " Weight"
+        },
+        {
+            "description": "",
+            "category": "",
+            "propType": "float",
+            "name": " Radius"
+        },
+        {
+            "description": "",
+            "category": "",
+            "propType": "bool",
+            "name": " bShouldAlignToGround"
+        },
+        {
+            "description": "",
+            "category": "",
+            "propType": "bool",
+            "name": " bRandomYaw"
+        },
+        {
+            "description": "",
+            "category": "",
+            "propType": "TArray<UMaterialInterface*>",
+            "name": " RandomMaterials"
+        },
+        {
+            "description": "",
+            "category": "",
+            "propType": "int",
+            "name": " RandomMaterialSlotID"
+        },
+        {
+            "description": "",
+            "category": "GeneratorSettings",
+            "propType": "FVector2D",
+            "name": " BoundingBox"
+        },
+        {
+            "description": "",
+            "category": "GeneratorSettings",
+            "propType": "int",
+            "name": " GeneratorTriesBeforePointRejection"
+        },
+        {
+            "description": "",
+            "category": "GeneratorSettings",
+            "propType": "float",
+            "name": " MaximumHeightDifference"
+        },
+        {
+            "description": "",
+            "category": "ObjectInfo",
+            "propType": "TArray<FULRandomObjectSpawnInfo>",
+            "name": " ObjectSpawnInfos"
+        },
+        {
+            "description": "",
+            "category": "PlacementSettings",
+            "propType": "bool",
+            "name": " bPlaceMeshActors"
+        },
+        {
+            "description": "",
+            "category": "PlacementSettings",
+            "propType": "bool",
+            "name": " bAllowPlaceOnLandscape"
+        },
+        {
+            "description": "",
+            "category": "PlacementSettings",
+            "propType": "TArray<FULObjectFilter>",
+            "name": " AllowPlacementOnActorsThatMatchFilter"
+        }
+    ]
+}

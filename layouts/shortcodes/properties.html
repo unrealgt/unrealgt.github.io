@@ -1,0 +1,11 @@
+{{ range sort (index (index $.Site.Data (.Get "classname")) "properties") "category" }}
+    {{ if ne .category ($.Scratch.Get "currentCategory") }}
+        {{ $.Scratch.Set "currentCategory" .category }}
+<h4>{{ .category }}</h4>
+    {{ end }}
+<span style="font-size: 1.2em;">{{ .propType }} <strong>{{ .name }}</strong></span>
+<p>
+{{ .description }}
+</p>
+<hr style="border-bottom: 1px solid #F0F2F4; margin: 1.5rem 0;">
+{{ end }}

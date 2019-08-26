@@ -1,0 +1,24 @@
+{
+    "filename": "/Users/lmbp/projects/github/UnrealLab/Plugins/ULab/Source/ULab/Public/Streamers/ULHttpStreamerComponent.h",
+    "description": "",
+    "properties": [
+        {
+            "description": "",
+            "category": "Http",
+            "propType": "FString",
+            "name": " TargetUrl"
+        },
+        {
+            "description": "",
+            "category": "Http",
+            "propType": "EULHttpMethod",
+            "name": " Method"
+        },
+        {
+            "description": "",
+            "category": "Http",
+            "propType": "EULHttpContentType",
+            "name": " ContentType"
+        }
+    ]
+}

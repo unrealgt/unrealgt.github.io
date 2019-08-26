@@ -1,0 +1,18 @@
+{
+    "filename": "/Users/lmbp/projects/github/UnrealLab/Plugins/ULab/Source/ULab/Public/Streamers/ULSimpleTCPStreamer.h",
+    "description": "",
+    "properties": [
+        {
+            "description": "",
+            "category": "",
+            "propType": "FString",
+            "name": " IPAddress"
+        },
+        {
+            "description": "",
+            "category": "",
+            "propType": "uint32",
+            "name": " Port"
+        }
+    ]
+}

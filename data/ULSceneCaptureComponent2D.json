@@ -1,0 +1,24 @@
+{
+    "filename": "/Users/lmbp/projects/github/UnrealLab/Plugins/ULab/Source/ULab/Public/Generators/Image/ULSceneCaptureComponent2D.h",
+    "description": "",
+    "properties": [
+        {
+            "description": "",
+            "category": "Image",
+            "propType": "bool",
+            "name": " bColorAsFloat"
+        },
+        {
+            "description": "",
+            "category": "Image",
+            "propType": "bool",
+            "name": " bUseDisplayGamma"
+        },
+        {
+            "description": "",
+            "category": "Image",
+            "propType": "FIntPoint",
+            "name": " Resolution"
+        }
+    ]
+}

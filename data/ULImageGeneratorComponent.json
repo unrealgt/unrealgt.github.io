@@ -1,0 +1,48 @@
+{
+    "filename": "/Users/lmbp/projects/github/UnrealLab/Plugins/ULab/Source/ULab/Public/Generators/Image/ULImageGeneratorComponent.h",
+    "description": "Generates RGB images todo details.",
+    "properties": [
+        {
+            "description": "Use the display gamma for generated images usually around 2.4",
+            "category": "Image",
+            "propType": "bool",
+            "name": " bUseDisplayGamma"
+        },
+        {
+            "description": "The maximum gamma to use if bRandomResolution is enabled.",
+            "category": "Image",
+            "propType": "float",
+            "name": " TargetGammaMax"
+        },
+        {
+            "description": "Camera projection type.",
+            "category": "Projection",
+            "propType": "TEnumAsByte<ECameraProjectionMode::Type>",
+            "name": " ProjectionType"
+        },
+        {
+            "description": "The desired width (in world units) of the orthographic view (ignored in Perspective mode)",
+            "category": "Projection",
+            "propType": "float",
+            "name": " OrthoWidth"
+        },
+        {
+            "description": "Enables a clip plane while rendering the scene capture which is useful for portals., The global clip plane must be enabled in the renderer project settings for this to work.",
+            "category": "SceneCapture",
+            "propType": "bool",
+            "name": " bEnableClipPlane"
+        },
+        {
+            "description": "Base position for the clip plane, can be any position on the plane.",
+            "category": "SceneCapture",
+            "propType": "FVector",
+            "name": " ClipPlaneBase"
+        },
+        {
+            "description": "Normal for the plane.",
+            "category": "SceneCapture",
+            "propType": "FVector",
+            "name": " ClipPlaneNormal"
+        }
+    ]
+}

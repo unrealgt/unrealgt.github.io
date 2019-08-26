@@ -1,0 +1,42 @@
+{
+    "filename": "/Users/lmbp/projects/github/UnrealLab/Plugins/ULab/Source/ULab/Public/Generators/Image/ULImageGeneratorBase.h",
+    "description": "",
+    "properties": [
+        {
+            "description": "The format the image will have, currently only .bmp and .png are supported.",
+            "category": "Image",
+            "propType": "EULImageFileFormat",
+            "name": " ImageFormat"
+        },
+        {
+            "description": "The resolution the generated images will have.",
+            "category": "Image",
+            "propType": "FIntPoint",
+            "name": " Resolution"
+        },
+        {
+            "description": "If enabled will choose a random resolution between Resolution and ResolutionMax for each captured image., This is useful for generating Training data.",
+            "category": "Image",
+            "propType": "bool",
+            "name": " bRandomResolution"
+        },
+        {
+            "description": "The maximum Resolution to use if bRandomResolution is enabled.",
+            "category": "Image",
+            "propType": "FIntPoint",
+            "name": " ResolutionMax"
+        },
+        {
+            "description": "Camera field of view (in degrees).",
+            "category": "Projection",
+            "propType": "float",
+            "name": " FOVAngle"
+        },
+        {
+            "description": "Perform anti aliasing when an image is rendered, enabled by default and highly recommended.",
+            "category": "Image",
+            "propType": "bool",
+            "name": " bAntiAliasing"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "filename": "/Users/lmbp/projects/github/UnrealLab/Plugins/ULab/Source/ULab/Public/ULObjectFilter.h",
+    "description": "",
+    "properties": [
+        {
+            "description": "",
+            "category": "Mesh",
+            "propType": "UStaticMesh*",
+            "name": " StaticMesh"
+        },
+        {
+            "description": "",
+            "category": "Mesh",
+            "propType": "USkeletalMesh*",
+            "name": " SkeletalMesh"
+        },
+        {
+            "description": "",
+            "category": "Mesh",
+            "propType": "FString",
+            "name": " WildcardMeshName"
+        },
+        {
+            "description": "",
+            "category": "Class",
+            "propType": "TSubclassOf<AActor>",
+            "name": " ActorClass"
+        },
+        {
+            "description": "",
+            "category": "Class",
+            "propType": "TSubclassOf<UActorComponent>",
+            "name": " ComponentClass"
+        },
+        {
+            "description": "",
+            "category": "Tag",
+            "propType": "FName",
+            "name": " ActorTag"
+        },
+        {
+            "description": "",
+            "category": "Tag",
+            "propType": "FName",
+            "name": " ComponentTag"
+        },
+        {
+            "description": "",
+            "category": "Instance",
+            "propType": "AActor*",
+            "name": " ActorInstance"
+        }
+    ]
+}

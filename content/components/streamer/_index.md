@@ -14,4 +14,4 @@ TODO explain data streamers in depth
 
 #### Available Streamers
 
-{{% list_subpages dir="components/streamer/" %}}
+{{% children  %}}

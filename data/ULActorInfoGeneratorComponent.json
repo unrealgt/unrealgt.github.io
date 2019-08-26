@@ -1,0 +1,114 @@
+{
+    "filename": "/Users/lmbp/projects/github/UnrealLab/Plugins/ULab/Source/ULab/Public/Generators/Text/ULActorInfoGeneratorComponent.h",
+    "description": "",
+    "properties": [
+        {
+            "description": "",
+            "category": "Tracked",
+            "propType": "TArray<FULObjectFilter>",
+            "name": " TrackActorsThatMatchFilter"
+        },
+        {
+            "description": "",
+            "category": "Tracked",
+            "propType": "bool",
+            "name": " bOnlyTrackRecentlyRenderedActors"
+        },
+        {
+            "description": "",
+            "category": "Tracked",
+            "propType": "bool",
+            "name": " bOnlyTrackOnScreenActors"
+        },
+        {
+            "description": "",
+            "category": "Tracked",
+            "propType": "FVector2D",
+            "name": " MinimalRequiredBoundingBoxSize"
+        },
+        {
+            "description": "",
+            "category": "Tracked",
+            "propType": "float",
+            "name": " MaxDistanceToCamera"
+        },
+        {
+            "description": "This will drastically increase bounding box accuracy but requires an additional render pass. The Larger the resolution, of the LinkedGenerator the larger the performance hit.",
+            "category": "Output",
+            "propType": "bool",
+            "name": " bAccurateBoundingBoxes"
+        },
+        {
+            "description": "Apply Close for Bounding Box Segmentation",
+            "category": "Output",
+            "propType": "bool",
+            "name": " bShouldApplyCloseMorph"
+        },
+        {
+            "description": "",
+            "category": "Output",
+            "propType": "FULGeneratorReference",
+            "name": " LinkedImageGenerator"
+        },
+        {
+            "description": "",
+            "category": "Output",
+            "propType": "FString",
+            "name": " Header"
+        },
+        {
+            "description": "",
+            "category": "Output",
+            "propType": "FString",
+            "name": " FormatActorString"
+        },
+        {
+            "description": "",
+            "category": "Output",
+            "propType": "FString",
+            "name": " Separator"
+        },
+        {
+            "description": "",
+            "category": "Output",
+            "propType": "FString",
+            "name": " Footer"
+        },
+        {
+            "description": "",
+            "category": "Output",
+            "propType": "FString",
+            "name": " FormatVector2DString"
+        },
+        {
+            "description": "",
+            "category": "Output",
+            "propType": "FString",
+            "name": " FormatVector3DString"
+        },
+        {
+            "description": "",
+            "category": "Output",
+            "propType": "FString",
+            "name": " FormatRotatorString"
+        },
+        {
+            "description": "",
+            "category": "Output",
+            "propType": "FString",
+            "name": " Format2DBoxString"
+        },
+        {
+            "description": "",
+            "category": "Output",
+            "propType": "FString",
+            "name": " Format3DBoxString"
+        },
+        {
+            "description": "",
+            "category": "Output",
+            "propType": "TMap<FString, FString>",
+            "name": " ReplaceStrings"
+        }
+    ]
+}

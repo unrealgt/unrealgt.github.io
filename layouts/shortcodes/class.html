@@ -1,0 +1,20 @@
+{{ $classData := index $.Site.Data (.Get "classname") }}
+{{ $addtionalProps := cond (ne (.Get "additionalprops") "") (index $.Site.Data (.Get "additionalprops")).properties slice }}
+<p>
+{{ $classData.description }}
+</p>
+
+<h3>Properties</h3>
+{{ $props := append $classData.properties $addtionalProps }}
+{{ range sort $props "category" }}
+    {{ if ne .category ($.Scratch.Get "currentCategory") }}
+        {{ $.Scratch.Set "currentCategory" .category }}
+<h4 style="margin-top: 1.2em; margin-bottom: 1.25em; font-size: 1.6em;">{{ .category }}</h4>
+    {{ end }}
+<div style="margin-left: 1.2    em; margin-bottom: 2.5em;">
+<span style="font-size: 1em;">{{ .propType }} <strong>{{ .name }}</strong></span>
+<p style="margin-left: 2em; margin-top: 0.4em;">
+{{ .description }}
+</p>
+</div>
+{{ end }}
