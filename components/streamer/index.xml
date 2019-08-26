@@ -12,12 +12,21 @@
     
     
     <item>
+      <title>Http</title>
+      <link>https://unrealgt.github.io/components/streamer/http/</link>
+      <pubDate>Mon, 26 Aug 2019 23:20:16 +0200</pubDate>
+      
+      <guid>https://unrealgt.github.io/components/streamer/http/</guid>
+      <description> Properties  FULGeneratorReference  GeneratorReference  Http FString  TargetUrl  EULHttpMethod  Method  EULHttpContentType  ContentType  </description>
+    </item>
+    
+    <item>
       <title>Tcp</title>
       <link>https://unrealgt.github.io/components/streamer/tcp/</link>
       <pubDate>Tue, 20 Aug 2019 15:11:18 +0200</pubDate>
       
       <guid>https://unrealgt.github.io/components/streamer/tcp/</guid>
-      <description></description>
+      <description> Properties  FULGeneratorReference  GeneratorReference  FString  IPAddress  uint32  Port  </description>
     </item>
     
     <item>
@@ -26,7 +35,7 @@
       <pubDate>Tue, 20 Aug 2019 15:11:07 +0200</pubDate>
       
       <guid>https://unrealgt.github.io/components/streamer/file/</guid>
-      <description></description>
+      <description> Properties  FULGeneratorReference  GeneratorReference  FString  FileNameFormat  </description>
     </item>
     
   </channel>

@@ -4,7 +4,7 @@
 	"title": "Image",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": " Generates RGB images todo details. Properties Image bool  bUseDisplayGamma Use the display gamma for generated images usually around 2.4  FIntPoint  Resolution The resolution the generated images will have.  bool  bRandomResolution If enabled will choose a random resolution between Resolution and ResolutionMax for each captured image., This is useful for generating Training data.  FIntPoint  ResolutionMax The maximum Resolution to use if bRandomResolution is enabled.  float  TargetGammaMax The maximum gamma to use if bRandomResolution is enabled.  bool  bAntiAliasing Perform anti aliasing when an image is rendered, enabled by default and highly recommended.  EULImageFileFormat  ImageFormat The format the image will have, currently only .bmp and .png are supported.  Projection float  FOVAngle Camera field of view (in degrees).  TEnumAsByte\u0026lt;ECameraProjectionMode::Type\u0026gt;  ProjectionType Camera projection type.  float  OrthoWidth The desired width (in world units) of the orthographic view (ignored in Perspective mode)  SceneCapture bool  bEnableClipPlane Enables a clip plane while rendering the scene capture which is useful for portals., The global clip plane must be enabled in the renderer project settings for this to work.  FVector  ClipPlaneBase Base position for the clip plane, can be any position on the plane.  FVector  ClipPlaneNormal Normal for the plane.  "
 },
 {
 	"uri": "https://unrealgt.github.io/basics/installation/",
@@ -25,21 +25,21 @@
 	"title": "Depth",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": " Properties Depth bool  bUsePerspectiveDepth  float  MaxZ  Image bool  bRandomResolution If enabled will choose a random resolution between Resolution and ResolutionMax for each captured image., This is useful for generating Training data.  FIntPoint  ResolutionMax The maximum Resolution to use if bRandomResolution is enabled.  bool  bAntiAliasing Perform anti aliasing when an image is rendered, enabled by default and highly recommended.  EULImageFileFormat  ImageFormat The format the image will have, currently only .bmp and .png are supported.  FIntPoint  Resolution The resolution the generated images will have.  Projection float  FOVAngle Camera field of view (in degrees).  "
 },
 {
 	"uri": "https://unrealgt.github.io/components/generator/",
 	"title": "Generator",
 	"tags": [],
 	"description": "",
-	"content": " Chapter 2.1 Generators TODO explain data generators in depth\nAvailable Generators  Image\n Depth\n Normal\n Segmentation\n Actorinfo\n  "
+	"content": " Chapter 2.1 Generators TODO explain data generators in depth\nAvailable Generators  Image   Depth   Normal   Segmentation   Actorinfo   "
 },
 {
 	"uri": "https://unrealgt.github.io/components/",
 	"title": "Components",
 	"tags": [],
 	"description": "",
-	"content": " Chapter 2 Data Generators \u0026amp; Streamers Overview of the Generator Streamer System and the individual components.\nData Generators  Image\n Depth\n Normal\n Segmentation\n Actorinfo\n  Data Streamers  Tcp\n File\n  "
+	"content": " Chapter 2 Data Generators \u0026amp; Streamers Overview of the Generator Streamer System and the individual components.\n Generator    Image   Depth   Normal   Segmentation   Actorinfo    Streamer    Http   Tcp   File    "
 },
 {
 	"uri": "https://unrealgt.github.io/basics/getting-started/",
@@ -53,14 +53,14 @@
 	"title": "Normal",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": " Properties Image EULImageFileFormat  ImageFormat The format the image will have, currently only .bmp and .png are supported.  FIntPoint  Resolution The resolution the generated images will have.  bool  bRandomResolution If enabled will choose a random resolution between Resolution and ResolutionMax for each captured image., This is useful for generating Training data.  FIntPoint  ResolutionMax The maximum Resolution to use if bRandomResolution is enabled.  bool  bAntiAliasing Perform anti aliasing when an image is rendered, enabled by default and highly recommended.  Projection float  FOVAngle Camera field of view (in degrees).  "
 },
 {
 	"uri": "https://unrealgt.github.io/components/streamer/",
 	"title": "Streamer",
 	"tags": [],
 	"description": "",
-	"content": " Chapter 2.2 Streamers TODO explain data streamers in depth\nAvailable Streamers  Tcp\n File\n  "
+	"content": " Chapter 2.2 Streamers TODO explain data streamers in depth\nAvailable Streamers  Http   Tcp   File   "
 },
 {
 	"uri": "https://unrealgt.github.io/advanced_examples/",
@@ -81,21 +81,21 @@
 	"title": "Segmentation",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": " Properties Image EULImageFileFormat  ImageFormat The format the image will have, currently only .bmp and .png are supported.  FIntPoint  Resolution The resolution the generated images will have.  bool  bRandomResolution If enabled will choose a random resolution between Resolution and ResolutionMax for each captured image., This is useful for generating Training data.  FIntPoint  ResolutionMax The maximum Resolution to use if bRandomResolution is enabled.  bool  bAntiAliasing Perform anti aliasing when an image is rendered, enabled by default and highly recommended.  Projection float  FOVAngle Camera field of view (in degrees).  Segmentaiton TMap\u0026lt;FULObjectFilter, FColor\u0026gt;  ComponentToColor  bool  bShouldApplyCloseMorph  "
 },
 {
 	"uri": "https://unrealgt.github.io/components/generator/actorinfo/",
 	"title": "Actorinfo",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": " Properties Output FString  FormatVector2DString  FString  Format3DBoxString  FString  Format2DBoxString  FString  FormatRotatorString  FString  FormatVector3DString  bool  bAccurateBoundingBoxes This will drastically increase bounding box accuracy but requires an additional render pass. The Larger the resolution, of the LinkedGenerator the larger the performance hit.  bool  bShouldApplyCloseMorph Apply Close for Bounding Box Segmentation  FULGeneratorReference  LinkedImageGenerator  FString  Header  FString  FormatActorString  FString  Separator  FString  Footer  TMap\u0026lt;FString, FString\u0026gt;  ReplaceStrings  Tracked float  MaxDistanceToCamera  FVector2D  MinimalRequiredBoundingBoxSize  bool  bOnlyTrackOnScreenActors  bool  bOnlyTrackRecentlyRenderedActors  TArray\u0026lt;FULObjectFilter\u0026gt;  TrackActorsThatMatchFilter  "
 },
 {
-	"uri": "https://unrealgt.github.io/components/streamer/tcp/",
-	"title": "Tcp",
+	"uri": "https://unrealgt.github.io/components/streamer/http/",
+	"title": "Http",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": " Properties  FULGeneratorReference  GeneratorReference  Http FString  TargetUrl  EULHttpMethod  Method  EULHttpContentType  ContentType  "
 },
 {
 	"uri": "https://unrealgt.github.io/",
@@ -105,11 +105,18 @@
 	"content": " By means of synthetic data generation, large amounts of image- and metadata can be extracted directly from a virtual scene, which in turn can be customized to meet the specific needs of the algorithm or the use-case. Furthermore, the use of virtual objects avoids problems that might arise due to data protec- tion issues and does not require the use of expensive sensors. We propose a framework for synthetic test data generation utilizing the Unreal Engine.\n Unreal EngineThe Unreal Engine provides a simulation environment that allows one to simulate complex situations in a virtual world, such as data acquisition with UAVs or autonomous diving.\n   Computer VisionBuilt-In Generators provide a large vareity of image generators. In addtion to basic color images, depth images, semantic segmenations, normal and depth maps. Image Generators can also be used in conjungtion to create multi camera setups.\n    Deep LearningGenerate accurate grountruth, for machine learning tasks. Bounding boxes, pose data(WIP) and various other properties of scene objects can be extracted\n   Fast Setup \u0026amp; ConfigurationBy utilizing the UI of the Unreal Editor complex data generation constructs can be created in minutes, without touching a single line of code.\n  Click here to get started!  -- "
 },
 {
+	"uri": "https://unrealgt.github.io/components/streamer/tcp/",
+	"title": "Tcp",
+	"tags": [],
+	"description": "",
+	"content": " Properties  FULGeneratorReference  GeneratorReference  FString  IPAddress  uint32  Port  "
+},
+{
 	"uri": "https://unrealgt.github.io/components/streamer/file/",
 	"title": "File",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": " Properties  FULGeneratorReference  GeneratorReference  FString  FileNameFormat  "
 },
 {
 	"uri": "https://unrealgt.github.io/advanced_examples/orb-slam2/",

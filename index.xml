@@ -6,7 +6,7 @@
     <description>Recent content in Unreal GT on Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Aug 2019 15:11:18 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 26 Aug 2019 23:20:16 +0200</lastBuildDate>
     
 	<atom:link href="https://unrealgt.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,7 +17,7 @@
       <pubDate>Tue, 20 Aug 2019 15:10:20 +0200</pubDate>
       
       <guid>https://unrealgt.github.io/components/generator/image/</guid>
-      <description></description>
+      <description>Generates RGB images todo details. Properties Image bool  bUseDisplayGamma Use the display gamma for generated images usually around 2.4  FIntPoint  Resolution The resolution the generated images will have.  bool  bRandomResolution If enabled will choose a random resolution between Resolution and ResolutionMax for each captured image., This is useful for generating Training data.  FIntPoint  ResolutionMax The maximum Resolution to use if bRandomResolution is enabled.</description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@
       <pubDate>Tue, 20 Aug 2019 15:10:26 +0200</pubDate>
       
       <guid>https://unrealgt.github.io/components/generator/depth/</guid>
-      <description></description>
+      <description>Properties Depth bool  bUsePerspectiveDepth  float  MaxZ  Image bool  bRandomResolution If enabled will choose a random resolution between Resolution and ResolutionMax for each captured image., This is useful for generating Training data.  FIntPoint  ResolutionMax The maximum Resolution to use if bRandomResolution is enabled.  bool  bAntiAliasing Perform anti aliasing when an image is rendered, enabled by default and highly recommended.  EULImageFileFormat  ImageFormat The format the image will have, currently only .</description>
     </item>
     
     <item>
@@ -56,7 +56,7 @@ First open a level of your choice inside the unreal Editor.
       <pubDate>Tue, 20 Aug 2019 15:10:33 +0200</pubDate>
       
       <guid>https://unrealgt.github.io/components/generator/normal/</guid>
-      <description></description>
+      <description>Properties Image EULImageFileFormat  ImageFormat The format the image will have, currently only .bmp and .png are supported.  FIntPoint  Resolution The resolution the generated images will have.  bool  bRandomResolution If enabled will choose a random resolution between Resolution and ResolutionMax for each captured image., This is useful for generating Training data.  FIntPoint  ResolutionMax The maximum Resolution to use if bRandomResolution is enabled.  bool  bAntiAliasing Perform anti aliasing when an image is rendered, enabled by default and highly recommended.</description>
     </item>
     
     <item>
@@ -75,7 +75,7 @@ First open a level of your choice inside the unreal Editor.
       <pubDate>Tue, 20 Aug 2019 15:10:41 +0200</pubDate>
       
       <guid>https://unrealgt.github.io/components/generator/segmentation/</guid>
-      <description></description>
+      <description>Properties Image EULImageFileFormat  ImageFormat The format the image will have, currently only .bmp and .png are supported.  FIntPoint  Resolution The resolution the generated images will have.  bool  bRandomResolution If enabled will choose a random resolution between Resolution and ResolutionMax for each captured image., This is useful for generating Training data.  FIntPoint  ResolutionMax The maximum Resolution to use if bRandomResolution is enabled.  bool  bAntiAliasing Perform anti aliasing when an image is rendered, enabled by default and highly recommended.</description>
     </item>
     
     <item>
@@ -84,7 +84,16 @@ First open a level of your choice inside the unreal Editor.
       <pubDate>Tue, 20 Aug 2019 15:10:48 +0200</pubDate>
       
       <guid>https://unrealgt.github.io/components/generator/actorinfo/</guid>
-      <description></description>
+      <description> Properties Output FString  FormatVector2DString  FString  Format3DBoxString  FString  Format2DBoxString  FString  FormatRotatorString  FString  FormatVector3DString  bool  bAccurateBoundingBoxes This will drastically increase bounding box accuracy but requires an additional render pass. The Larger the resolution, of the LinkedGenerator the larger the performance hit.  bool  bShouldApplyCloseMorph Apply Close for Bounding Box Segmentation  FULGeneratorReference  LinkedImageGenerator  FString  Header  FString  FormatActorString  FString  Separator  FString  Footer  TMap&amp;lt;FString, FString&amp;gt;  ReplaceStrings  Tracked float  MaxDistanceToCamera  FVector2D  MinimalRequiredBoundingBoxSize  bool  bOnlyTrackOnScreenActors  bool  bOnlyTrackRecentlyRenderedActors  TArray&amp;lt;FULObjectFilter&amp;gt;  TrackActorsThatMatchFilter  </description>
+    </item>
+    
+    <item>
+      <title>Http</title>
+      <link>https://unrealgt.github.io/components/streamer/http/</link>
+      <pubDate>Mon, 26 Aug 2019 23:20:16 +0200</pubDate>
+      
+      <guid>https://unrealgt.github.io/components/streamer/http/</guid>
+      <description> Properties  FULGeneratorReference  GeneratorReference  Http FString  TargetUrl  EULHttpMethod  Method  EULHttpContentType  ContentType  </description>
     </item>
     
     <item>
@@ -93,7 +102,7 @@ First open a level of your choice inside the unreal Editor.
       <pubDate>Tue, 20 Aug 2019 15:11:18 +0200</pubDate>
       
       <guid>https://unrealgt.github.io/components/streamer/tcp/</guid>
-      <description></description>
+      <description> Properties  FULGeneratorReference  GeneratorReference  FString  IPAddress  uint32  Port  </description>
     </item>
     
     <item>
@@ -102,7 +111,7 @@ First open a level of your choice inside the unreal Editor.
       <pubDate>Tue, 20 Aug 2019 15:11:07 +0200</pubDate>
       
       <guid>https://unrealgt.github.io/components/streamer/file/</guid>
-      <description></description>
+      <description> Properties  FULGeneratorReference  GeneratorReference  FString  FileNameFormat  </description>
     </item>
     
     <item>
