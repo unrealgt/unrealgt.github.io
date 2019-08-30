@@ -12,20 +12,20 @@
     <title>Image :: Homepage</title>
 
     
-    <link href="/css/nucleus.css?1566854519" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1566854519" rel="stylesheet">
-    <link href="/css/hybrid.css?1566854519" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1566854519" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1566854519" rel="stylesheet">
-    <link href="/css/auto-complete.css?1566854519" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1566854519" rel="stylesheet">
-    <link href="/css/theme.css?1566854519" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1566854519" rel="stylesheet">
+    <link href="/css/nucleus.css?1567171262" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1567171262" rel="stylesheet">
+    <link href="/css/hybrid.css?1567171262" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1567171262" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1567171262" rel="stylesheet">
+    <link href="/css/auto-complete.css?1567171262" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1567171262" rel="stylesheet">
+    <link href="/css/theme.css?1567171262" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1567171262" rel="stylesheet">
     
-      <link href="/css/theme-grey.css?1566854519" rel="stylesheet">
+      <link href="/css/theme-grey.css?1567171262" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1566854519"></script>
+    <script src="/js/jquery-3.3.1.min.js?1567171262"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -126,14 +126,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1566854519"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1566854519"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1567171262"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1567171262"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/unrealgt.github.io\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1566854519"></script>
+<script type="text/javascript" src="/js/search.js?1567171262"></script>
 
     
   </div>
@@ -672,106 +672,131 @@
 
 
 
+<p><span style="font-size: 1.2em;"> <strong>ULImageGeneratorComponent </strong></span>
+<br>
 <p>
-Generates RGB images todo details.
+A virtual camera that enerates RGB images.  A lot of camera specific paramters like exposure, ISO, shutterspeed, bloom, fov (focal-length) can be configured.  These parameters can be found in the <a href="#Image">Image</a>, <a href="#PostProcessVolume">PostProcessVolume</a> and <a href="#Projection">Projection</a> Categories.<br>  For maximum compatibility the generated images are encoded in a standardized format currently BMP and PNG are supported.<br>  It is also possible to randomize resolution and gamma, which can bes useful for traning data, more ranomizable properties will be added in the future.
 </p>
+<h3 id="properties" style="font-size: 1.7em;">Properties</h3></p>
 
-<h3>Properties</h3>
-
-<h4 style="margin-top: 1.2em; margin-bottom: 1.25em; font-size: 1.6em;">Image</h4>
+<h4 id="Image" style="margin-top: 1.2em; margin-bottom: 1.25em; font-size: 1.4em;">Image</h4>
     
 
-<div style="margin-left: 1.2    em; margin-bottom: 2.5em;">
-<span style="font-size: 1em;">bool <strong> bUseDisplayGamma</strong></span>
+<div style="margin-left: 1.2em; margin-bottom: 2.5em;">
+<span style="font-size: 1em;">bool <strong> bUseRandomGamma</strong></span>
 <p style="margin-left: 2em; margin-top: 0.4em;">
-Use the display gamma for generated images usually around 2.4
+If enabled will choose a random gamma between TargetGamma and TargetGammaMax for each captured image.  This is useful for generating Training data.
 </p>
 </div>
 
-<div style="margin-left: 1.2    em; margin-bottom: 2.5em;">
+<div style="margin-left: 1.2em; margin-bottom: 2.5em;">
 <span style="font-size: 1em;">FIntPoint <strong> Resolution</strong></span>
 <p style="margin-left: 2em; margin-top: 0.4em;">
 The resolution the generated images will have.
 </p>
 </div>
 
-<div style="margin-left: 1.2    em; margin-bottom: 2.5em;">
+<div style="margin-left: 1.2em; margin-bottom: 2.5em;">
 <span style="font-size: 1em;">bool <strong> bRandomResolution</strong></span>
 <p style="margin-left: 2em; margin-top: 0.4em;">
-If enabled will choose a random resolution between Resolution and ResolutionMax for each captured image., This is useful for generating Training data.
+If enabled will choose a random resolution between Resolution and ResolutionMax for each captured image.  This is useful for generating Training data.
 </p>
 </div>
 
-<div style="margin-left: 1.2    em; margin-bottom: 2.5em;">
+<div style="margin-left: 1.2em; margin-bottom: 2.5em;">
 <span style="font-size: 1em;">FIntPoint <strong> ResolutionMax</strong></span>
 <p style="margin-left: 2em; margin-top: 0.4em;">
 The maximum Resolution to use if bRandomResolution is enabled.
 </p>
 </div>
 
-<div style="margin-left: 1.2    em; margin-bottom: 2.5em;">
+<div style="margin-left: 1.2em; margin-bottom: 2.5em;">
 <span style="font-size: 1em;">float <strong> TargetGammaMax</strong></span>
 <p style="margin-left: 2em; margin-top: 0.4em;">
 The maximum gamma to use if bRandomResolution is enabled.
 </p>
 </div>
 
-<div style="margin-left: 1.2    em; margin-bottom: 2.5em;">
+<div style="margin-left: 1.2em; margin-bottom: 2.5em;">
 <span style="font-size: 1em;">bool <strong> bAntiAliasing</strong></span>
 <p style="margin-left: 2em; margin-top: 0.4em;">
-Perform anti aliasing when an image is rendered, enabled by default and highly recommended.
+Perform anti aliasing when an image is rendered.  Highly recommended for basic images, but might cause issues if used with segmentation or depth generators.
 </p>
 </div>
 
-<div style="margin-left: 1.2    em; margin-bottom: 2.5em;">
+<div style="margin-left: 1.2em; margin-bottom: 2.5em;">
+<span style="font-size: 1em;">bool <strong> bUseDisplayGamma</strong></span>
+<p style="margin-left: 2em; margin-top: 0.4em;">
+Use the display gamma for generated images usually around 2.4
+</p>
+</div>
+
+<div style="margin-left: 1.2em; margin-bottom: 2.5em;">
+<span style="font-size: 1em;">float <strong> TargetGamma</strong></span>
+<p style="margin-left: 2em; margin-top: 0.4em;">
+Specify a custom gama value for images.
+</p>
+</div>
+
+<div style="margin-left: 1.2em; margin-bottom: 2.5em;">
 <span style="font-size: 1em;">EULImageFileFormat <strong> ImageFormat</strong></span>
 <p style="margin-left: 2em; margin-top: 0.4em;">
 The format the image will have, currently only .bmp and .png are supported.
 </p>
 </div>
 
-<h4 style="margin-top: 1.2em; margin-bottom: 1.25em; font-size: 1.6em;">Projection</h4>
+<h4 id="PostProcessVolume" style="margin-top: 1.2em; margin-bottom: 1.25em; font-size: 1.4em;">PostProcessVolume</h4>
     
 
-<div style="margin-left: 1.2    em; margin-bottom: 2.5em;">
+<div style="margin-left: 1.2em; margin-bottom: 2.5em;">
+<span style="font-size: 1em;">FPostProcessSettings <strong> PostProcessSettings</strong></span>
+<p style="margin-left: 2em; margin-top: 0.4em;">
+Post-process settings to use <a href="https://docs.unrealengine.com/en-US/API/Runtime/Engine/Engine/FPostProcessSettings/index.html">FPostProcessSettings</a>
+</p>
+</div>
+
+<h4 id="Projection" style="margin-top: 1.2em; margin-bottom: 1.25em; font-size: 1.4em;">Projection</h4>
+    
+
+<div style="margin-left: 1.2em; margin-bottom: 2.5em;">
 <span style="font-size: 1em;">float <strong> FOVAngle</strong></span>
 <p style="margin-left: 2em; margin-top: 0.4em;">
 Camera field of view (in degrees).
 </p>
 </div>
 
-<div style="margin-left: 1.2    em; margin-bottom: 2.5em;">
+<div style="margin-left: 1.2em; margin-bottom: 2.5em;">
 <span style="font-size: 1em;">TEnumAsByte&lt;ECameraProjectionMode::Type&gt; <strong> ProjectionType</strong></span>
 <p style="margin-left: 2em; margin-top: 0.4em;">
 Camera projection type.
 </p>
 </div>
 
-<div style="margin-left: 1.2    em; margin-bottom: 2.5em;">
+<div style="margin-left: 1.2em; margin-bottom: 2.5em;">
 <span style="font-size: 1em;">float <strong> OrthoWidth</strong></span>
 <p style="margin-left: 2em; margin-top: 0.4em;">
 The desired width (in world units) of the orthographic view (ignored in Perspective mode)
 </p>
 </div>
 
-<h4 style="margin-top: 1.2em; margin-bottom: 1.25em; font-size: 1.6em;">SceneCapture</h4>
+<h4 id="SceneCapture" style="margin-top: 1.2em; margin-bottom: 1.25em; font-size: 1.4em;">SceneCapture</h4>
     
 
-<div style="margin-left: 1.2    em; margin-bottom: 2.5em;">
+<div style="margin-left: 1.2em; margin-bottom: 2.5em;">
 <span style="font-size: 1em;">bool <strong> bEnableClipPlane</strong></span>
 <p style="margin-left: 2em; margin-top: 0.4em;">
-Enables a clip plane while rendering the scene capture which is useful for portals., The global clip plane must be enabled in the renderer project settings for this to work.
+Enables a clip plane while rendering the scene capture which is useful for portals.  The global clip plane must be enabled in the renderer project settings for this to work.
 </p>
 </div>
 
-<div style="margin-left: 1.2    em; margin-bottom: 2.5em;">
+<div style="margin-left: 1.2em; margin-bottom: 2.5em;">
 <span style="font-size: 1em;">FVector <strong> ClipPlaneBase</strong></span>
 <p style="margin-left: 2em; margin-top: 0.4em;">
 Base position for the clip plane, can be any position on the plane.
 </p>
 </div>
 
-<div style="margin-left: 1.2    em; margin-bottom: 2.5em;">
+<div style="margin-left: 1.2em; margin-bottom: 2.5em;">
 <span style="font-size: 1em;">FVector <strong> ClipPlaneNormal</strong></span>
 <p style="margin-left: 2em; margin-top: 0.4em;">
 Normal for the plane.
@@ -1131,19 +1156,19 @@ Normal for the plane.
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1566854519"></script>
-    <script src="/js/perfect-scrollbar.min.js?1566854519"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1566854519"></script>
-    <script src="/js/jquery.sticky.js?1566854519"></script>
-    <script src="/js/featherlight.min.js?1566854519"></script>
-    <script src="/js/highlight.pack.js?1566854519"></script>
+    <script src="/js/clipboard.min.js?1567171262"></script>
+    <script src="/js/perfect-scrollbar.min.js?1567171262"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1567171262"></script>
+    <script src="/js/jquery.sticky.js?1567171262"></script>
+    <script src="/js/featherlight.min.js?1567171262"></script>
+    <script src="/js/highlight.pack.js?1567171262"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1566854519"></script>
-    <script src="/js/learn.js?1566854519"></script>
-    <script src="/js/hugo-learn.js?1566854519"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1567171262"></script>
+    <script src="/js/learn.js?1567171262"></script>
+    <script src="/js/hugo-learn.js?1567171262"></script>
 
-    <link href="/mermaid/mermaid.css?1566854519" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1566854519"></script>
+    <link href="/mermaid/mermaid.css?1567171262" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1567171262"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
