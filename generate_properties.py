@@ -10,21 +10,21 @@ import json
 
 def commentContent(text):
     for comment in re.findall(r'\*\*(.*?)\*\/', text, re.S):
-        return re.sub('\n+', ',', re.sub(r'[ *]+', ' ', comment).strip())
+        return re.sub('\n+', '', re.sub(r'\n[ ]*\*+', ' ', comment).strip())
 
 headerFiles = glob.glob(sys.argv[1] + '/**/*.h', recursive=True)
 
 for headerFile in headerFiles:
     headerFileContent = open(headerFile).read()
 
-    classDocComment = re.findall(r'(\/\*\*[\s\w.,()*="{}]*\*\/\s*)(?:UCLASS\([\s\w.,()*="{}]*?\)\n|(?:class ULAB_API))', headerFileContent)
+    classDocComment = re.findall(r'(\/\*\*[\s\w.,()*="\'&\-+!\[\]:\/<>#`]*\*\/\s*)(?:UCLASS\([\s\w.,()*="\'&\-+!\[\]:\/<>#`]*?\)\n|(?:class ULAB_API))', headerFileContent)
     classDocCommentContent = commentContent(classDocComment[0]) if classDocComment else ""
-    
+
     resultObject = {'filename': headerFile, 'description': classDocCommentContent, 'properties': []}
 
     # haters will argue that parsing cpp with a regex is stupid,
     # but for this usecase it's good enough
-    propertyMatches = re.findall(r'(\/\*\*[\s\w.,()*="{}&\-+]*\*\/\s*)?UPROPERTY\(([\s\w.,()*="{}&]*?Edit[\s\w.,()*="{}&\-+]*?)\)\n\s+(.+?)(\s\w+);', headerFileContent)
+    propertyMatches = re.findall(r'(\/\*\*[\s\w.,()*="\'&\-+!\[\]:\/<>#`]*\*\/\s*)?UPROPERTY\(([\s\w.,()*="\'{}&\-+!\[\]:\/<>#`]*?(?:Edit|ShowOnlyInnerProperties)[\s\w.,()*="\'{}&\-+!\[\]:\/<>#`]*?)\)\n\s+(.+?)(\s\w+);', headerFileContent)
     for captures in propertyMatches:
         description = commentContent(captures[0])
         category = re.findall(r'Category = "?(\w+)"?', captures[1])

@@ -17,6 +17,12 @@
         {
             "description": "",
             "category": "Image",
+            "propType": "float",
+            "name": " TargetGamma"
+        },
+        {
+            "description": "",
+            "category": "Image",
             "propType": "FIntPoint",
             "name": " Resolution"
         }

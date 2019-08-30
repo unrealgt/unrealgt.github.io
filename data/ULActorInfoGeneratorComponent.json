@@ -33,7 +33,7 @@
             "name": " MaxDistanceToCamera"
         },
         {
-            "description": "This will drastically increase bounding box accuracy but requires an additional render pass. The Larger the resolution, of the LinkedGenerator the larger the performance hit.",
+            "description": "This will drastically increase bounding box accuracy but requires an additional render pass. The Larger the resolution  of the LinkedGenerator the larger the performance hit.",
             "category": "Output",
             "propType": "bool",
             "name": " bAccurateBoundingBoxes"

@@ -7,6 +7,18 @@
             "category": "TriggerSettings",
             "propType": "bool",
             "name": " bTriggerEveryFrame"
+        },
+        {
+            "description": "",
+            "category": "TriggerSettings",
+            "propType": "float",
+            "name": " FrameRate"
+        },
+        {
+            "description": "",
+            "category": "TriggerSettings",
+            "propType": "TArray<FULGeneratorReference>",
+            "name": " DataGenerators"
         }
     ]
 }

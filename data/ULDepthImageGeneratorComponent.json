@@ -1,15 +1,15 @@
 {
     "filename": "/Users/lmbp/projects/github/UnrealLab/Plugins/ULab/Source/ULab/Public/Generators/Image/ULDepthImageGeneratorComponent.h",
-    "description": "",
+    "description": "Generates depth images. Uses planar depth as default setting, perspective depth can be enabled via bUsePerspectiveDepth.<br>  The depth is encoded in millimetres (mm) in the RGB channels of the image.  This means the depth value is a 24bit with a maximum value of 16.777216 km. TODO add nanometre option  The RGB values can be converted to mm using the following formula: `R + G * 256 + B * 256 * 256`. TODO link python depth convert example",
     "properties": [
         {
-            "description": "",
+            "description": "Use perspective depth instead of planar depth.",
             "category": "Depth",
             "propType": "bool",
             "name": " bUsePerspectiveDepth"
         },
         {
-            "description": "",
+            "description": "Maximum depth(distance) to record.",
             "category": "Depth",
             "propType": "float",
             "name": " MaxZ"

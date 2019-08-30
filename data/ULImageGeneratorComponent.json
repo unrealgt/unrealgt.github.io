@@ -1,12 +1,24 @@
 {
     "filename": "/Users/lmbp/projects/github/UnrealLab/Plugins/ULab/Source/ULab/Public/Generators/Image/ULImageGeneratorComponent.h",
-    "description": "Generates RGB images todo details.",
+    "description": "A virtual camera that enerates RGB images.  A lot of camera specific paramters like exposure, ISO, shutterspeed, bloom, fov (focal-length) can be configured.  These parameters can be found in the [Image](#Image), [PostProcessVolume](#PostProcessVolume) and [Projection](#Projection) Categories.<br>  For maximum compatibility the generated images are encoded in a standardized format currently BMP and PNG are supported.<br>  It is also possible to randomize resolution and gamma, which can bes useful for traning data, more ranomizable properties will be added in the future.",
     "properties": [
         {
             "description": "Use the display gamma for generated images usually around 2.4",
             "category": "Image",
             "propType": "bool",
             "name": " bUseDisplayGamma"
+        },
+        {
+            "description": "Specify a custom gama value for images.",
+            "category": "Image",
+            "propType": "float",
+            "name": " TargetGamma"
+        },
+        {
+            "description": "If enabled will choose a random gamma between TargetGamma and TargetGammaMax for each captured image.  This is useful for generating Training data.",
+            "category": "Image",
+            "propType": "bool",
+            "name": " bUseRandomGamma"
         },
         {
             "description": "The maximum gamma to use if bRandomResolution is enabled.",
@@ -27,7 +39,13 @@
             "name": " OrthoWidth"
         },
         {
-            "description": "Enables a clip plane while rendering the scene capture which is useful for portals., The global clip plane must be enabled in the renderer project settings for this to work.",
+            "description": "Post-process settings to use [FPostProcessSettings](https://docs.unrealengine.com/en-US/API/Runtime/Engine/Engine/FPostProcessSettings/index.html)",
+            "category": "PostProcessVolume",
+            "propType": "FPostProcessSettings",
+            "name": " PostProcessSettings"
+        },
+        {
+            "description": "Enables a clip plane while rendering the scene capture which is useful for portals.  The global clip plane must be enabled in the renderer project settings for this to work.",
             "category": "SceneCapture",
             "propType": "bool",
             "name": " bEnableClipPlane"

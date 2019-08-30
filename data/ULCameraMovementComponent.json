@@ -1,5 +1,54 @@
 {
     "filename": "/Users/lmbp/projects/github/UnrealLab/Plugins/ULab/Source/ULab/Public/Misc/ULCameraMovementComponent.h",
     "description": "",
-    "properties": []
+    "properties": [
+        {
+            "description": "",
+            "category": "CaptureSettings",
+            "propType": "bool",
+            "name": " bFollowMainView"
+        },
+        {
+            "description": "",
+            "category": "CaptureSettings",
+            "propType": "bool",
+            "name": " bFollowActor"
+        },
+        {
+            "description": "",
+            "category": "CaptureSettings",
+            "propType": "AActor*",
+            "name": " FollowActor"
+        },
+        {
+            "description": "",
+            "category": "CaptureSettings",
+            "propType": "bool",
+            "name": " bFollowRail"
+        },
+        {
+            "description": "",
+            "category": "CaptureSettings",
+            "propType": "bool",
+            "name": " bLockOrientationToRail"
+        },
+        {
+            "description": "",
+            "category": "CaptureSettings",
+            "propType": "ACameraRig_Rail*",
+            "name": " FollowRail"
+        },
+        {
+            "description": "",
+            "category": "CaptureSettings",
+            "propType": "float",
+            "name": " RailSpeed"
+        },
+        {
+            "description": "",
+            "category": "CaptureSettings",
+            "propType": "bool",
+            "name": " bDestroyOwnerAtEnd"
+        }
+    ]
 }
