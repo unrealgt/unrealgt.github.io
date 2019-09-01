@@ -2,7 +2,7 @@
 title: "Installation"
 date: 2019-07-26T14:14:04+02:00
 draft: false
-weight: 1
+weight: 2
 ---
 
 ### Requirements

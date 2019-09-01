@@ -2,7 +2,7 @@
 title: "Debugging Generation"
 date: 2019-07-26T14:25:09+02:00
 draft: false
-weight: 3
+weight: 4
 ---
 
 Click the ULab Icon in the Toolbar to open the debug Window.

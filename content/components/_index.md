@@ -8,9 +8,12 @@ pre = "<b>2. </b>"
 
 ### Chapter 2
 
-# Data Generators & Streamers
+# Generators, Streamers & Triggers
 
-Overview of the Generator Streamer System and the individual components.
-
-{{% children depth="2"%}}
+The data generation process is split into 3 different component types. These components can be combined to create complex data generation constructs.<br>
+The basic generation workflow will look like this:
+`Trigger -> Generator -> Streamer`<br>
+Tirggers are used to kick of the generation, a trigger can be time based or based on an event (a motion sensor for example).<br>
+Generators are resposible for data collection from the scene.<br>
+Streamers can than be used to transport the collected data from the engine to an external storage or API (e.g. the File System).<br>
 

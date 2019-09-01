@@ -2,7 +2,7 @@
 title: "Getting Started"
 date: 2019-07-26T14:20:36+02:00
 draft: false
-weight: 2
+weight: 3
 ---
 
 The Plugin exposes a vereity of actor components, which can be used to generate data from the virtual world inside the Editor.
