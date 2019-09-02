@@ -6,10 +6,19 @@
     <description>Recent content in Unreal GT on Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Aug 2019 23:20:16 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 30 Aug 2019 17:38:45 +0200</lastBuildDate>
     
 	<atom:link href="https://unrealgt.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Indroduction</title>
+      <link>https://unrealgt.github.io/basics/indroduction/</link>
+      <pubDate>Fri, 30 Aug 2019 17:38:45 +0200</pubDate>
+      
+      <guid>https://unrealgt.github.io/basics/indroduction/</guid>
+      <description>UnrealGT is a tool that can generate data from a virtual scene inside the Unreal Engine. The goal is to provide to provide a Toolkit that is as flexible as possible, with many data generation scenarios supported out of the box and the ability to easily extend the built in components for more complex scenarios. To achive this goal this tool is directly integrated into the Engine&amp;rsquo;s editor in the form of a plugin and therfore requires some basic knowldege about the unreal engine.</description>
+    </item>
     
     <item>
       <title>Image</title>
@@ -23,6 +32,16 @@ It is also possible to randomize resolution and gamma, which can bes useful for 
     </item>
     
     <item>
+      <title>Depth</title>
+      <link>https://unrealgt.github.io/components/generator/depth/</link>
+      <pubDate>Tue, 20 Aug 2019 15:10:26 +0200</pubDate>
+      
+      <guid>https://unrealgt.github.io/components/generator/depth/</guid>
+      <description>ULDepthImageGeneratorComponent   Generates depth images. Uses planar depth as default setting, perspective depth can be enabled via bUsePerspectiveDepth.
+The depth is encoded in millimetres (mm) in the RGB channels of the image. This means the depth value is a 24bit with a maximum value of 16.777216 km. TODO add nanometre option The RGB values can be converted to mm using the following formula: R + G * 256 + B * 256 * 256.</description>
+    </item>
+    
+    <item>
       <title>Installation</title>
       <link>https://unrealgt.github.io/basics/installation/</link>
       <pubDate>Fri, 26 Jul 2019 14:14:04 +0200</pubDate>
@@ -32,13 +51,13 @@ It is also possible to randomize resolution and gamma, which can bes useful for 
     </item>
     
     <item>
-      <title>Depth</title>
-      <link>https://unrealgt.github.io/components/generator/depth/</link>
-      <pubDate>Tue, 20 Aug 2019 15:10:26 +0200</pubDate>
+      <title>Normal</title>
+      <link>https://unrealgt.github.io/components/generator/normal/</link>
+      <pubDate>Tue, 20 Aug 2019 15:10:33 +0200</pubDate>
       
-      <guid>https://unrealgt.github.io/components/generator/depth/</guid>
-      <description>ULDepthImageGeneratorComponent   Generates depth images. Uses planar depth as default setting, perspective depth can be enabled via bUsePerspectiveDepth.
-The depth is encoded in millimetres (mm) in the RGB channels of the image. This means the depth value is a 24bit with a maximum value of 16.777216 km. TODO add nanometre option The RGB values can be converted to mm using the following formula: R + G * 256 + B * 256 * 256.</description>
+      <guid>https://unrealgt.github.io/components/generator/normal/</guid>
+      <description>ULImageNormalGeneratorComponent   Renders the surface normals of the objects in the scene. The normals are encoded in the RGB channels. They can be converted from RGB to world space coordinates using: RGB -&amp;gt; Normal: 2 * C/255 C - 1 Properties
+Image EULImageFileFormat  ImageFormat The format the image will have, currently only .bmp and .png are supported.  FIntPoint  Resolution The resolution the generated images will have.  bool  bRandomResolution If enabled will choose a random resolution between Resolution and ResolutionMax for each captured image.</description>
     </item>
     
     <item>
@@ -54,13 +73,15 @@ First open a level of your choice inside the unreal Editor.
     </item>
     
     <item>
-      <title>Normal</title>
-      <link>https://unrealgt.github.io/components/generator/normal/</link>
-      <pubDate>Tue, 20 Aug 2019 15:10:33 +0200</pubDate>
+      <title>Segmentation</title>
+      <link>https://unrealgt.github.io/components/generator/segmentation/</link>
+      <pubDate>Tue, 20 Aug 2019 15:10:41 +0200</pubDate>
       
-      <guid>https://unrealgt.github.io/components/generator/normal/</guid>
-      <description>ULImageNormalGeneratorComponent   Renders the surface normals of the objects in the scene. The normals are encoded in the RGB channels. They can be converted from RGB to world space coordinates using: RGB -&amp;gt; Normal: 2 * C/255 C - 1 Properties
-Image EULImageFileFormat  ImageFormat The format the image will have, currently only .bmp and .png are supported.  FIntPoint  Resolution The resolution the generated images will have.  bool  bRandomResolution If enabled will choose a random resolution between Resolution and ResolutionMax for each captured image.</description>
+      <guid>https://unrealgt.github.io/components/generator/segmentation/</guid>
+      <description>ULSegmentationGeneratorComponent  
+
+Properties
+Image EULImageFileFormat  ImageFormat The format the image will have, currently only .bmp and .png are supported.  FIntPoint  Resolution The resolution the generated images will have.  bool  bRandomResolution If enabled will choose a random resolution between Resolution and ResolutionMax for each captured image. This is useful for generating Training data.  FIntPoint  ResolutionMax The maximum Resolution to use if bRandomResolution is enabled.</description>
     </item>
     
     <item>
@@ -71,18 +92,6 @@ Image EULImageFileFormat  ImageFormat The format the image will have, currently 
       <guid>https://unrealgt.github.io/basics/debugging-generation/</guid>
       <description>Click the ULab Icon in the Toolbar to open the debug Window. Type the name of the generator component you want to debug into the text input to render debug info.
  </description>
-    </item>
-    
-    <item>
-      <title>Segmentation</title>
-      <link>https://unrealgt.github.io/components/generator/segmentation/</link>
-      <pubDate>Tue, 20 Aug 2019 15:10:41 +0200</pubDate>
-      
-      <guid>https://unrealgt.github.io/components/generator/segmentation/</guid>
-      <description>ULSegmentationGeneratorComponent  
-
-Properties
-Image EULImageFileFormat  ImageFormat The format the image will have, currently only .bmp and .png are supported.  FIntPoint  Resolution The resolution the generated images will have.  bool  bRandomResolution If enabled will choose a random resolution between Resolution and ResolutionMax for each captured image. This is useful for generating Training data.  FIntPoint  ResolutionMax The maximum Resolution to use if bRandomResolution is enabled.</description>
     </item>
     
     <item>

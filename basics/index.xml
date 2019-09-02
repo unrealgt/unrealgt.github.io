@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Indroduction</title>
+      <link>https://unrealgt.github.io/basics/indroduction/</link>
+      <pubDate>Fri, 30 Aug 2019 17:38:45 +0200</pubDate>
+      
+      <guid>https://unrealgt.github.io/basics/indroduction/</guid>
+      <description>UnrealGT is a tool that can generate data from a virtual scene inside the Unreal Engine. The goal is to provide to provide a Toolkit that is as flexible as possible, with many data generation scenarios supported out of the box and the ability to easily extend the built in components for more complex scenarios. To achive this goal this tool is directly integrated into the Engine&amp;rsquo;s editor in the form of a plugin and therfore requires some basic knowldege about the unreal engine.</description>
+    </item>
+    
+    <item>
       <title>Installation</title>
       <link>https://unrealgt.github.io/basics/installation/</link>
       <pubDate>Fri, 26 Jul 2019 14:14:04 +0200</pubDate>
