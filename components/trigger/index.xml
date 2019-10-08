@@ -11,5 +11,17 @@
 	<atom:link href="https://unrealgt.github.io/components/trigger/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Time Based</title>
+      <link>https://unrealgt.github.io/components/trigger/time-based/</link>
+      <pubDate>Fri, 30 Aug 2019 17:42:39 +0200</pubDate>
+      
+      <guid>https://unrealgt.github.io/components/trigger/time-based/</guid>
+      <description>GTTimedGeneratorTrigger  
+
+Properties
+TriggerSettings bool  bTriggerEveryFrame  float  FrameRate  TArray&amp;lt;FGTGeneratorReference&amp;gt;  DataGenerators  </description>
+    </item>
+    
   </channel>
 </rss>

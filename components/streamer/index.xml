@@ -17,10 +17,10 @@
       <pubDate>Mon, 26 Aug 2019 23:20:16 +0200</pubDate>
       
       <guid>https://unrealgt.github.io/components/streamer/http/</guid>
-      <description>ULHttpStreamerComponent  
+      <description>GTHttpStreamerComponent  
 
 Properties
- FULGeneratorReference  GeneratorReference  Http FString  TargetUrl  EULHttpMethod  Method  EULHttpContentType  ContentType  </description>
+ FGTGeneratorReference  GeneratorReference  Http FString  TargetUrl  EGTHttpMethod  Method  EGTHttpContentType  ContentType  </description>
     </item>
     
     <item>
@@ -29,10 +29,10 @@ Properties
       <pubDate>Tue, 20 Aug 2019 15:11:18 +0200</pubDate>
       
       <guid>https://unrealgt.github.io/components/streamer/tcp/</guid>
-      <description>ULSimpleTCPStreamer  
+      <description>GTSimpleTCPStreamer  
 
 Properties
- FULGeneratorReference  GeneratorReference  FString  IPAddress  uint32  Port  </description>
+ FGTGeneratorReference  GeneratorReference  FString  IPAddress  uint32  Port  </description>
     </item>
     
     <item>
@@ -41,10 +41,10 @@ Properties
       <pubDate>Tue, 20 Aug 2019 15:11:07 +0200</pubDate>
       
       <guid>https://unrealgt.github.io/components/streamer/file/</guid>
-      <description>ULFileStreamerComponent  
+      <description>GTFileStreamerComponent  
 
 Properties
- FULGeneratorReference  GeneratorReference  FString  FileNameFormat  </description>
+ FGTGeneratorReference  GeneratorReference  FString  FileNameFormat  </description>
     </item>
     
   </channel>
