@@ -8,11 +8,9 @@ By means of synthetic data generation, large amounts of image- and metadata can 
 
 {{< figure src="images/editor_overview2.png" class="captionright" title="Unreal Engine" caption="The Unreal Engine provides a simulation environment that allows one to simulate complex situations in a virtual world, such as data acquisition with UAVs or autonomous diving." >}}
 
-{{< figure src="images/image_overview.png" class="captionleft" title="Computer Vision" caption="Built-In Generators provide a large vareity of image generators. In addtion to basic color images, depth images, semantic segmenations, normal and depth maps. Image Generators can also be used in conjungtion to create multi camera setups." >}}
+{{< figure src="images/image_overview.png" class="captionleft" title="Computer Vision" caption="Built-In Generators allow a large vareity of images to be synthesized. In addtion to basic color images, depth images, semantic segmenations, normal and depth maps. The Image Generators can also be used in conjungtion to create multi camera setups." >}}
 
-
-{{< figure src="images/bounding_box_accurate_closing_edited.png" title="Deep Learning" caption="Generate accurate grountruth, for machine learning tasks. Bounding boxes, pose data(WIP) and various other properties of scene objects can be extracted" >}}
-
+{{< figure src="images/bounding_box_accurate_closing_edited.png" title="Deep Learning" caption="Generate accurate grountruth, for machine learning tasks! Bounding boxes, pose data(WIP) and various other properties of scene objects can be extracted" >}}
 
 {{< figure src="images/ui_overview.png" class="captionright" title="Fast Setup & Configuration" caption="By utilizing the UI of the Unreal Editor complex data generation constructs can be created in minutes, without touching a single line of code." >}}
 

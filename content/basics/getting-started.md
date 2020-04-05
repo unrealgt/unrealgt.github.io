@@ -40,7 +40,7 @@ so if your ImageGenerator doesn't show up at first hit compile at the top and re
 
 You can also set the naming convention for the created files.
 You have access to `{ID}` and `{Time}` as variables.
-The files are stored inside your Projects `Saved` Directory in the `ULab` folder.
+The files are stored inside your Projects `Saved` Directory in the `UnrealGT` folder.
 
 **ULTimedCaptureTrigger**
 

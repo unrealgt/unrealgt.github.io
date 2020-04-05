@@ -9,7 +9,7 @@
             "name": " TrackActorsThatMatchFilter"
         },
         {
-            "description": "",
+            "description": "Track only actors that are \"on screen\"/\"within an image\".  This setting requires LinkedImageGenerator to be set.",
             "category": "Tracked",
             "propType": "bool",
             "name": " bOnlyTrackRecentlyRenderedActors"
@@ -33,7 +33,7 @@
             "name": " MaxDistanceToCamera"
         },
         {
-            "description": "* This will drastically increase bounding box accuracy but requires an additional render pass. The Larger the resolution\t * of the LinkedGenerator the larger the performance hit.",
+            "description": "Drastically Increase the accuracy of the bounding boxes, but requires an additional render  pass. The additional render pass creates a segmentation map for the tracked actors and uses  that map to refine the bounding boxes.   **Therefore Requires \"Enabled with stencil\" in `Engine > Rendering > Postprocessing >  Custom-Depth Stencil Pass` to be set**   The additional render pas at least doubles the cost of creating the bounding boxes.  The Larger the resolution of the LinkedGenerator the larger the performance hit.",
             "category": "Output",
             "propType": "bool",
             "name": " bAccurateBoundingBoxes"
@@ -45,7 +45,7 @@
             "name": " bShouldApplyCloseMorph"
         },
         {
-            "description": "",
+            "description": "Link an image generator to this component.  The linked Generator is used to determine when an  actor is \"on screen\" and should be tracked.  Setting this is also required for generating 2D  bounding boxes.",
             "category": "Output",
             "propType": "FGTGeneratorReference",
             "name": " LinkedImageGenerator"

@@ -12,7 +12,7 @@ themeVariant = "grey"
 [[menu.shortcuts]] 
 name = "<i class='fab fa-github'></i> Github repo"
 identifier = "ds"
-url = "https://github.com/lolleko/UnrealGT"
+url = "https://github.com/unrealgt/UnrealGT"
 weight = 10
 
 [[menu.shortcuts]]
