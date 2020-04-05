@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Basics on Homepage</title>
@@ -47,7 +47,7 @@ First open a level of your choice inside the unreal Editor.
       <pubDate>Fri, 26 Jul 2019 14:25:09 +0200</pubDate>
       
       <guid>https://unrealgt.github.io/basics/debugging-generation/</guid>
-      <description>Click the ULab Icon in the Toolbar to open the debug Window. Type the name of the generator component you want to debug into the text input to render debug info.
+      <description>Click the UnrealGT Icon in the Toolbar to open the debug Window. Type the name of the generator component you want to debug into the text input to render debug info.
  </description>
     </item>
     

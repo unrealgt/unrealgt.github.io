@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Generator on Homepage</title>
@@ -17,7 +17,7 @@
       <pubDate>Tue, 20 Aug 2019 15:10:20 +0200</pubDate>
       
       <guid>https://unrealgt.github.io/components/generator/image/</guid>
-      <description>GTImageGeneratorComponent   A virtual camera that enerates RGB images. A lot of camera specific paramters like exposure, ISO, shutterspeed, bloom, fov (focal-length) can be configured. These parameters can be found in the Image, PostProcessVolume and Projection Categories.
+      <description>GTImageGeneratorComponent  A virtual camera that enerates RGB images. A lot of camera specific paramters like exposure, ISO, shutterspeed, bloom, fov (focal-length) can be configured. These parameters can be found in the Image, PostProcessVolume and Projection Categories.
 For maximum compatibility the generated images are encoded in a standardized format currently BMP and PNG are supported.
 It is also possible to randomize resolution and gamma, which can bes useful for traning data, more ranomizable properties will be added in the future.</description>
     </item>
@@ -28,7 +28,7 @@ It is also possible to randomize resolution and gamma, which can bes useful for 
       <pubDate>Tue, 20 Aug 2019 15:10:26 +0200</pubDate>
       
       <guid>https://unrealgt.github.io/components/generator/depth/</guid>
-      <description>GTDepthImageGeneratorComponent   Generates depth images. Uses planar depth as default setting, perspective depth can be enabled via bUsePerspectiveDepth.
+      <description>GTDepthImageGeneratorComponent  Generates depth images. Uses planar depth as default setting, perspective depth can be enabled via bUsePerspectiveDepth.
 The depth is encoded in millimetres (mm) in the RGB channels of the image. This means the depth value is a 24bit with a maximum value of 16.777216 km. TODO add nanometre option The RGB values can be converted to mm using the following formula: R + G * 256 + B * 256 * 256.</description>
     </item>
     
@@ -38,8 +38,7 @@ The depth is encoded in millimetres (mm) in the RGB channels of the image. This 
       <pubDate>Tue, 20 Aug 2019 15:10:33 +0200</pubDate>
       
       <guid>https://unrealgt.github.io/components/generator/normal/</guid>
-      <description>GTImageNormalGeneratorComponent   Renders the surface normals of the objects in the scene. The normals are encoded in the RGB channels. They can be converted from RGB to world space coordinates using: RGB -&amp;gt; Normal: 2 * C/255 C - 1 Properties
-Image EGTImageFileFormat  ImageFormat The format the image will have, currently only .bmp and .png are supported.  FIntPoint  Resolution The resolution the generated images will have.  bool  bRandomResolution If enabled will choose a random resolution between Resolution and ResolutionMax for each captured image.</description>
+      <description>GTImageNormalGeneratorComponent  Renders the surface normals of the objects in the scene. The normals are encoded in the RGB channels. They can be converted from RGB to world space coordinates using: RGB -&amp;gt; Normal: 2 * C/255 C - 1PropertiesImageEGTImageFileFormat  ImageFormatThe format the image will have, currently only .bmp and .png are supported.FIntPoint  ResolutionThe resolution the generated images will have.bool  bRandomResolutionIf enabled will choose a random resolution between Resolution and ResolutionMax for each captured image.</description>
     </item>
     
     <item>
@@ -48,22 +47,25 @@ Image EGTImageFileFormat  ImageFormat The format the image will have, currently 
       <pubDate>Tue, 20 Aug 2019 15:10:41 +0200</pubDate>
       
       <guid>https://unrealgt.github.io/components/generator/segmentation/</guid>
-      <description>GTSegmentationGeneratorComponent  
-
-Properties
-Image EGTImageFileFormat  ImageFormat The format the image will have, currently only .bmp and .png are supported.  FIntPoint  Resolution The resolution the generated images will have.  bool  bRandomResolution If enabled will choose a random resolution between Resolution and ResolutionMax for each captured image. This is useful for generating Training data.  FIntPoint  ResolutionMax The maximum Resolution to use if bRandomResolution is enabled.</description>
+      <description>GTSegmentationGeneratorComponent  Can generate segmentation for an image. You can assign components color by adding a filter color pair to the ComponentToColor map. Requires &amp;ldquo;Enabled with stencil&amp;rdquo; project setting in Engine &amp;gt; Rendering &amp;gt; Postprocessing &amp;gt; Custom-Depth Stencil PassPropertiesImageEGTImageFileFormat  ImageFormatThe format the image will have, currently only .bmp and .png are supported.FIntPoint  ResolutionThe resolution the generated images will have.bool  bRandomResolutionIf enabled will choose a random resolution between Resolution and ResolutionMax for each captured image.</description>
     </item>
     
     <item>
-      <title>Actorinfo</title>
+      <title>ActorInfo</title>
       <link>https://unrealgt.github.io/components/generator/actorinfo/</link>
       <pubDate>Tue, 20 Aug 2019 15:10:48 +0200</pubDate>
       
       <guid>https://unrealgt.github.io/components/generator/actorinfo/</guid>
-      <description>GTActorInfoGeneratorComponent  
-
-Properties
-Output FString  FormatVector2DString  FString  Format3DBoxString  FString  Format2DBoxString  FString  FormatRotatorString  FString  FormatVector3DString  bool  bAccurateBoundingBoxes This will drastically increase bounding box accuracy but requires an additional render pass. The Larger the resolution of the LinkedGenerator the larger the performance hit.  bool  bShouldApplyCloseMorph Apply Close for Bounding Box Segmentation  FGTGeneratorReference  LinkedImageGenerator  FString  Header  FString  FormatActorString  FString  Separator  FString  Footer  TMap&amp;lt;FString, FString&amp;gt;  ReplaceStrings  Tracked float  MaxDistanceToCamera  FVector2D  MinimalRequiredBoundingBoxSize  bool  bOnlyTrackOnScreenActors  bool  bOnlyTrackRecentlyRenderedActors  TArray&amp;lt;FGTObjectFilter&amp;gt;  TrackActorsThatMatchFilter  </description>
+      <description>GTActorInfoGeneratorComponent  Generates information about actors in a scene (e.g. MeshName, BoundingBoxes, ActorName). The Output format can be customize via formatting strings.PropertiesOutputFString  FormatVector2DStringFString  Format3DBoxStringFString  Format2DBoxStringFString  FormatRotatorStringFString  FormatVector3DStringbool  bAccurateBoundingBoxes This will drastically increase bounding box accuracy but requires an additional render pass. The Larger the resolution	* of the LinkedGenerator the larger the performance hit.</description>
+    </item>
+    
+    <item>
+      <title>Calibration</title>
+      <link>https://unrealgt.github.io/components/generator/calibration/</link>
+      <pubDate>Tue, 20 Aug 2019 15:10:48 +0200</pubDate>
+      
+      <guid>https://unrealgt.github.io/components/generator/calibration/</guid>
+      <description>GTCameraCalibrationComponent  Can bes used to get calibration parameters from image generators. Set CameraOneReference to retrieve data for one camera. Set CameraOneReference and CameraTwoReference to generate stereo calibration parameters.PropertiesCamerasFGTGeneratorReference  CameraOneReferenceFGTGeneratorReference  CameraTwoReference</description>
     </item>
     
   </channel>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Streamer on Homepage</title>
@@ -17,10 +17,7 @@
       <pubDate>Mon, 26 Aug 2019 23:20:16 +0200</pubDate>
       
       <guid>https://unrealgt.github.io/components/streamer/http/</guid>
-      <description>GTHttpStreamerComponent  
-
-Properties
- FGTGeneratorReference  GeneratorReference  Http FString  TargetUrl  EGTHttpMethod  Method  EGTHttpContentType  ContentType  </description>
+      <description>GTHttpStreamerComponent  PropertiesFGTGeneratorReference  GeneratorReferenceHttpFString  TargetUrlEGTHttpMethod  MethodEGTHttpContentType  ContentType</description>
     </item>
     
     <item>
@@ -29,10 +26,7 @@ Properties
       <pubDate>Tue, 20 Aug 2019 15:11:18 +0200</pubDate>
       
       <guid>https://unrealgt.github.io/components/streamer/tcp/</guid>
-      <description>GTSimpleTCPStreamer  
-
-Properties
- FGTGeneratorReference  GeneratorReference  FString  IPAddress  uint32  Port  </description>
+      <description>GTSimpleTCPStreamer  PropertiesFGTGeneratorReference  GeneratorReferenceFString  IPAddressuint32  Port</description>
     </item>
     
     <item>
@@ -41,10 +35,7 @@ Properties
       <pubDate>Tue, 20 Aug 2019 15:11:07 +0200</pubDate>
       
       <guid>https://unrealgt.github.io/components/streamer/file/</guid>
-      <description>GTFileStreamerComponent  
-
-Properties
- FGTGeneratorReference  GeneratorReference  FString  FileNameFormat  </description>
+      <description>GTFileStreamerComponent  PropertiesFGTGeneratorReference  GeneratorReferenceFString  FileNameFormat</description>
     </item>
     
   </channel>
