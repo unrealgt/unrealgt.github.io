@@ -1,0 +1,18 @@
+{
+    "filename": "C:\\Users\\lolleko\\Repos\\UnrealGTContainer\\Plugins\\unrealgt\\Source\\UnrealGT\\Public\\Generators\\Image\\GTCameraCalibrationComponent.h",
+    "description": "Can bes used to get calibration parameters from image generators.  Set CameraOneReference to retrieve data for one camera.  Set CameraOneReference and CameraTwoReference to generate stereo calibration parameters.",
+    "properties": [
+        {
+            "description": "",
+            "category": "Cameras",
+            "propType": "FGTGeneratorReference",
+            "name": " CameraOneReference"
+        },
+        {
+            "description": "",
+            "category": "Cameras",
+            "propType": "FGTGeneratorReference",
+            "name": " CameraTwoReference"
+        }
+    ]
+}

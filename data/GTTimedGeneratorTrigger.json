@@ -1,5 +1,5 @@
 {
-    "filename": "/Users/lmbp/projects/github/UnrealLab/Plugins/ULab/Source/ULab/Public/Triggers/ULTimedGeneratorTrigger.h",
+    "filename": "C:\\Users\\lolleko\\Repos\\UnrealGTContainer\\Plugins\\unrealgt\\Source\\UnrealGT\\Public\\Triggers\\GTTimedGeneratorTrigger.h",
     "description": "",
     "properties": [
         {
@@ -17,7 +17,7 @@
         {
             "description": "",
             "category": "TriggerSettings",
-            "propType": "TArray<FULGeneratorReference>",
+            "propType": "TArray<FGTGeneratorReference>",
             "name": " DataGenerators"
         }
     ]

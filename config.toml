@@ -19,3 +19,6 @@ weight = 10
 name = "<i class='fas fa-camera'></i> Showcases"
 url = "/showcase"
 weight = 11
+
+[markup.goldmark.renderer]
+unsafe= true

@@ -63,10 +63,10 @@ We choose the default Follow Main View as movement mode.
 
 {{< figure src="../images/camera_movement_properties.png" class="captionleft" height="300">}}
 
-* `Follow Main View` will follow your main viewport camera/player
-* `Follow Actor` will follow a actor, this actor can only be selected after the Blueprint has been placed in a level
-* `Follow Rail` will follow a camera Rail Actor, you can configure the speed at which our Blueprint Actor will follow the rail.  
-Tutorial for camera rails: https://docs.unrealengine.com/en-us/Engine/Sequencer/HowTo/CameraRigRail you can skip 2-3. and 9.-16, we will use our blueprint as cine camera instead and the movement a long the rail is handled by this component not the sequencer.
+- `Follow Main View` will follow your main viewport camera/player
+- `Follow Actor` will follow a actor, this actor can only be selected after the Blueprint has been placed in a level
+- `Follow Rail` will follow a camera Rail Actor, you can configure the speed at which our Blueprint Actor will follow the rail.  
+  Tutorial for camera rails: https://docs.unrealengine.com/en-us/Engine/Sequencer/HowTo/CameraRigRail you can skip 2-3. and 9.-16, we will use our blueprint as cine camera instead and the movement a long the rail is handled by this component not the sequencer.
 
 ## First Test
 
@@ -75,7 +75,7 @@ Once you configured your components save and compile your blueprint.
 Drag and drop your blueprint from the content browser into the scene.
 You should see a camera indicating the direction your ImageGenerator is going to record.
 
-Start the simulation and images should get generated in your `Saved/ULab` directory.
+Start the simulation and images should get generated in your projects `Saved` directory under `UnrealGT`.
 
 ## Examples
 
@@ -83,3 +83,6 @@ You can find the Blueprint described in this Tutorial and additional examples in
 https://github.com/lolleko/UnrealGT/tree/master/Content/Examples.
 
 To view the examples in the editor enable "Show Plugin Content" in the content browser's view options.
+
+To get familiar with the Plugin place the example actors in a map open the debug window as described in [{{< ref "debugging-generation.md" >}}]({{< ref "debugging-generation.md" >}})
+and write the examples name in the text box.

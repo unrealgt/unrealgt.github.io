@@ -14,4 +14,4 @@ TODO explain data generators in depth
 
 #### Available Generators
 
-{{% children  %}}
+{{% children %}}

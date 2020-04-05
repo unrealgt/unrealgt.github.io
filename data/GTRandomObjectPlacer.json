@@ -1,13 +1,7 @@
 {
-    "filename": "/Users/lmbp/projects/github/UnrealLab/Plugins/ULab/Source/ULab/Public/Misc/ULRandomObjectPlacer.h",
+    "filename": "C:\\Users\\lolleko\\Repos\\UnrealGTContainer\\Plugins\\unrealgt\\Source\\UnrealGT\\Public\\Misc\\GTRandomObjectPlacer.h",
     "description": "",
     "properties": [
-        {
-            "description": "",
-            "category": "",
-            "propType": "UStaticMesh*",
-            "name": " Mesh"
-        },
         {
             "description": "",
             "category": "",
@@ -35,7 +29,7 @@
         {
             "description": "",
             "category": "",
-            "propType": "TArray<UMaterialInterface*>",
+            "propType": "TArray<UMaterialInterface *>",
             "name": " RandomMaterials"
         },
         {
@@ -65,7 +59,7 @@
         {
             "description": "",
             "category": "ObjectInfo",
-            "propType": "TArray<FULRandomObjectSpawnInfo>",
+            "propType": "TArray<FGTRandomObjectSpawnInfo>",
             "name": " ObjectSpawnInfos"
         },
         {
@@ -89,7 +83,7 @@
         {
             "description": "",
             "category": "PlacementSettings",
-            "propType": "TArray<FULObjectFilter>",
+            "propType": "TArray<FGTObjectFilter>",
             "name": " AllowPlacementOnActorsThatMatchFilter"
         }
     ]

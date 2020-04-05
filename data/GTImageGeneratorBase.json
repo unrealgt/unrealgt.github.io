@@ -1,11 +1,11 @@
 {
-    "filename": "/Users/lmbp/projects/github/UnrealLab/Plugins/ULab/Source/ULab/Public/Generators/Image/ULImageGeneratorBase.h",
+    "filename": "C:\\Users\\lolleko\\Repos\\UnrealGTContainer\\Plugins\\unrealgt\\Source\\UnrealGT\\Public\\Generators\\Image\\GTImageGeneratorBase.h",
     "description": "",
     "properties": [
         {
             "description": "The format the image will have, currently only .bmp and .png are supported.",
             "category": "Image",
-            "propType": "EULImageFileFormat",
+            "propType": "EGTImageFileFormat",
             "name": " ImageFormat"
         },
         {
@@ -15,7 +15,7 @@
             "name": " Resolution"
         },
         {
-            "description": "If enabled will choose a random resolution between Resolution and ResolutionMax for each captured image.  This is useful for generating Training data.",
+            "description": "If enabled will choose a random resolution between Resolution and ResolutionMax for each  captured image. This is useful for generating Training data.",
             "category": "Image",
             "propType": "bool",
             "name": " bRandomResolution"
@@ -33,7 +33,7 @@
             "name": " FOVAngle"
         },
         {
-            "description": "Perform anti aliasing when an image is rendered.  Highly recommended for basic images, but might cause issues if used with segmentation or depth generators.",
+            "description": "Perform anti aliasing when an image is rendered.  Highly recommended for basic images, but might cause issues if used with segmentation or  depth generators.",
             "category": "Image",
             "propType": "bool",
             "name": " bAntiAliasing"

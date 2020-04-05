@@ -1,5 +1,5 @@
 {
-    "filename": "/Users/lmbp/projects/github/UnrealLab/Plugins/ULab/Source/ULab/Public/Misc/ULCameraMovementComponent.h",
+    "filename": "C:\\Users\\lolleko\\Repos\\UnrealGTContainer\\Plugins\\unrealgt\\Source\\UnrealGT\\Public\\Misc\\GTCameraMovementComponent.h",
     "description": "",
     "properties": [
         {
@@ -17,12 +17,6 @@
         {
             "description": "",
             "category": "CaptureSettings",
-            "propType": "AActor*",
-            "name": " FollowActor"
-        },
-        {
-            "description": "",
-            "category": "CaptureSettings",
             "propType": "bool",
             "name": " bFollowRail"
         },
@@ -31,12 +25,6 @@
             "category": "CaptureSettings",
             "propType": "bool",
             "name": " bLockOrientationToRail"
-        },
-        {
-            "description": "",
-            "category": "CaptureSettings",
-            "propType": "ACameraRig_Rail*",
-            "name": " FollowRail"
         },
         {
             "description": "",

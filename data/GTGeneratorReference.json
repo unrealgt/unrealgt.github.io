@@ -1,0 +1,12 @@
+{
+    "filename": "C:\\Users\\lolleko\\Repos\\UnrealGTContainer\\Plugins\\unrealgt\\Source\\UnrealGT\\Public\\GTGeneratorReference.h",
+    "description": "",
+    "properties": [
+        {
+            "description": "Name of component property to use",
+            "category": "Component",
+            "propType": "FName",
+            "name": " ComponentProperty"
+        }
+    ]
+}

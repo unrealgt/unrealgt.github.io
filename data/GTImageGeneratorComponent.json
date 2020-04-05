@@ -1,5 +1,5 @@
 {
-    "filename": "/Users/lmbp/projects/github/UnrealLab/Plugins/ULab/Source/ULab/Public/Generators/Image/ULImageGeneratorComponent.h",
+    "filename": "C:\\Users\\lolleko\\Repos\\UnrealGTContainer\\Plugins\\unrealgt\\Source\\UnrealGT\\Public\\Generators\\Image\\GTImageGeneratorComponent.h",
     "description": "A virtual camera that enerates RGB images.  A lot of camera specific paramters like exposure, ISO, shutterspeed, bloom, fov (focal-length) can be configured.  These parameters can be found in the [Image](#Image), [PostProcessVolume](#PostProcessVolume) and [Projection](#Projection) Categories.<br>  For maximum compatibility the generated images are encoded in a standardized format currently BMP and PNG are supported.<br>  It is also possible to randomize resolution and gamma, which can bes useful for traning data, more ranomizable properties will be added in the future.",
     "properties": [
         {

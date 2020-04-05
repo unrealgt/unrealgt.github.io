@@ -1,0 +1,12 @@
+{
+    "filename": "C:\\Users\\lolleko\\Repos\\UnrealGTContainer\\Plugins\\unrealgt\\Source\\UnrealGT\\Public\\Streamers\\GTDataStreamerComponent.h",
+    "description": "",
+    "properties": [
+        {
+            "description": "",
+            "category": "",
+            "propType": "FGTGeneratorReference",
+            "name": " GeneratorReference"
+        }
+    ]
+}

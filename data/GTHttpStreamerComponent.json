@@ -1,5 +1,5 @@
 {
-    "filename": "/Users/lmbp/projects/github/UnrealLab/Plugins/ULab/Source/ULab/Public/Streamers/ULHttpStreamerComponent.h",
+    "filename": "C:\\Users\\lolleko\\Repos\\UnrealGTContainer\\Plugins\\unrealgt\\Source\\UnrealGT\\Public\\Streamers\\GTHttpStreamerComponent.h",
     "description": "",
     "properties": [
         {
@@ -11,13 +11,13 @@
         {
             "description": "",
             "category": "Http",
-            "propType": "EULHttpMethod",
+            "propType": "EGTHttpMethod",
             "name": " Method"
         },
         {
             "description": "",
             "category": "Http",
-            "propType": "EULHttpContentType",
+            "propType": "EGTHttpContentType",
             "name": " ContentType"
         }
     ]

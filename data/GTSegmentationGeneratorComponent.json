@@ -1,0 +1,18 @@
+{
+    "filename": "C:\\Users\\lolleko\\Repos\\UnrealGTContainer\\Plugins\\unrealgt\\Source\\UnrealGT\\Public\\Generators\\Image\\GTSegmentationGeneratorComponent.h",
+    "description": "Can generate segmentation for an image. You can assign components color by adding a filter color pair to the ComponentToColor map.  Requires \"Enabled with stencil\" project setting in Engine > Rendering > Postprocessing > Custom-Depth Stencil Pass",
+    "properties": [
+        {
+            "description": "",
+            "category": "Segmentaiton",
+            "propType": "TMap<FGTObjectFilter, FColor>",
+            "name": " ComponentToColor"
+        },
+        {
+            "description": "",
+            "category": "Segmentaiton",
+            "propType": "bool",
+            "name": " bShouldApplyCloseMorph"
+        }
+    ]
+}

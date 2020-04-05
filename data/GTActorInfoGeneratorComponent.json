@@ -1,11 +1,11 @@
 {
-    "filename": "/Users/lmbp/projects/github/UnrealLab/Plugins/ULab/Source/ULab/Public/Generators/Text/ULActorInfoGeneratorComponent.h",
-    "description": "",
+    "filename": "C:\\Users\\lolleko\\Repos\\UnrealGTContainer\\Plugins\\unrealgt\\Source\\UnrealGT\\Public\\Generators\\Text\\GTActorInfoGeneratorComponent.h",
+    "description": "Generates information about actors in a scene (e.g. MeshName, BoundingBoxes, ActorName).  The Output format can be customize via formatting strings.",
     "properties": [
         {
             "description": "",
             "category": "Tracked",
-            "propType": "TArray<FULObjectFilter>",
+            "propType": "TArray<FGTObjectFilter>",
             "name": " TrackActorsThatMatchFilter"
         },
         {
@@ -33,7 +33,7 @@
             "name": " MaxDistanceToCamera"
         },
         {
-            "description": "This will drastically increase bounding box accuracy but requires an additional render pass. The Larger the resolution  of the LinkedGenerator the larger the performance hit.",
+            "description": "* This will drastically increase bounding box accuracy but requires an additional render pass. The Larger the resolution\t * of the LinkedGenerator the larger the performance hit.",
             "category": "Output",
             "propType": "bool",
             "name": " bAccurateBoundingBoxes"
@@ -47,7 +47,7 @@
         {
             "description": "",
             "category": "Output",
-            "propType": "FULGeneratorReference",
+            "propType": "FGTGeneratorReference",
             "name": " LinkedImageGenerator"
         },
         {
