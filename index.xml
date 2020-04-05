@@ -96,7 +96,7 @@ First open a level of your choice inside the unreal Editor.
       <pubDate>Tue, 20 Aug 2019 15:10:48 +0200</pubDate>
       
       <guid>https://unrealgt.github.io/components/generator/actorinfo/</guid>
-      <description>GTActorInfoGeneratorComponent  Generates information about actors in a scene (e.g. MeshName, BoundingBoxes, ActorName). The Output format can be customize via formatting strings.PropertiesOutputFString  FormatVector2DStringFString  Format3DBoxStringFString  Format2DBoxStringFString  FormatRotatorStringFString  FormatVector3DStringbool  bAccurateBoundingBoxes This will drastically increase bounding box accuracy but requires an additional render pass. The Larger the resolution	* of the LinkedGenerator the larger the performance hit.</description>
+      <description>GTActorInfoGeneratorComponent  Generates information about actors in a scene (e.g. MeshName, BoundingBoxes, ActorName). The Output format can be customize via formatting strings.PropertiesOutputFString  FormatVector2DStringFString  Format3DBoxStringFString  Format2DBoxStringFString  FormatRotatorStringFString  FormatVector3DStringbool  bAccurateBoundingBoxesDrastically Increase the accuracy of the bounding boxes, but requires an additional render pass. The additional render pass creates a segmentation map for the tracked actors and uses that map to refine the bounding boxes.</description>
     </item>
     
     <item>
