@@ -47,7 +47,7 @@ The depth is encoded in millimeters (mm) in the RGB channels of the image. This 
       <pubDate>Tue, 20 Aug 2019 15:10:41 +0200</pubDate>
       
       <guid>https://unrealgt.github.io/components/generator/segmentation/</guid>
-      <description>GTSegmentationGeneratorComponent  PropertiesImageEGTImageFileFormat  ImageFormatThe format the image will have, currently only .bmp and .png are supported.FIntPoint  ResolutionThe resolution the generated images will have.bool  bRandomResolutionIf enabled will choose a random resolution between Resolution and ResolutionMax for each captured image. This is useful for generating Training data.FIntPoint  ResolutionMaxThe maximum Resolution to use if bRandomResolution is enabled.</description>
+      <description>GTSegmentationGeneratorComponent  Can generate segmentation for an image. You can assign components color by adding a filter color pair to the ComponentToColor map. Requires &amp;ldquo;Enabled with stencil&amp;rdquo; project setting in Engine &amp;gt; Rendering &amp;gt; Postprocessing &amp;gt; Custom-Depth Stencil Pass Will emit a JSON file containing the configured color mappings called &amp;ldquo;segmentation_info&amp;rdquo; in Saved/UnrealGT/{SessionName}/{Time}/{SegmentationGeneratorName} Note: Anti-Aliasing is disabled for segmentation generators by default!PropertiesImageEGTImageFileFormat  ImageFormatThe format the image will have, currently only .</description>
     </item>
     
     <item>
