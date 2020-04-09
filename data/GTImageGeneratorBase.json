@@ -33,7 +33,7 @@
             "name": " FOVAngle"
         },
         {
-            "description": "Perform anti aliasing when an image is rendered.  Highly recommended for basic images, but might cause issues if used with segmentation or  depth generators.",
+            "description": "Perform anti aliasing when an image is rendered.  Highly recommended for basic images, but might cause issues if used with segmentation or  depth generators.   Temporal Anti-Aliasing might cause \"jittering\" if the generator is not moving.",
             "category": "Image",
             "propType": "bool",
             "name": " bAntiAliasing"
