@@ -17,7 +17,7 @@
       <pubDate>Mon, 26 Aug 2019 23:20:16 +0200</pubDate>
       
       <guid>https://unrealgt.github.io/components/streamer/http/</guid>
-      <description>GTHttpStreamerComponent  PropertiesFGTGeneratorReference  GeneratorReferenceHttpFString  TargetUrlEGTHttpMethod  MethodEGTHttpContentType  ContentType</description>
+      <description>GTHttpStreamerComponent  Example: https://github.com/unrealgt/unrealgt/tree/master/Examples/PythonHTTPClientPropertiesFGTGeneratorReference  GeneratorReferenceHttpFString  TargetUrlEGTHttpMethod  MethodEGTHttpContentType  ContentType</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Tue, 20 Aug 2019 15:11:18 +0200</pubDate>
       
       <guid>https://unrealgt.github.io/components/streamer/tcp/</guid>
-      <description>GTSimpleTCPStreamer  PropertiesFGTGeneratorReference  GeneratorReferenceFString  IPAddressuint32  Port</description>
+      <description>GTSimpleTCPStreamer  Example: https://github.com/unrealgt/unrealgt/tree/master/Examples/PythonTCPClientPropertiesFGTGeneratorReference  GeneratorReferenceFString  IPAddressuint32  Port</description>
     </item>
     
     <item>
