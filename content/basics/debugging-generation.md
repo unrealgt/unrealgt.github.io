@@ -8,4 +8,4 @@ weight: 4
 Click the UnrealGT Icon in the Toolbar to open the debug Window.
 Type the name of the generator component you want to debug into the text input to render debug info.
 
-{{< figure src="../images/debugwindow.png" class="captionleft" height="300">}}
+{{< figure src="../images/debugwindow.png?fix=fix" class="captionleft">}}
