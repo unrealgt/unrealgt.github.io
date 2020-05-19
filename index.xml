@@ -68,7 +68,7 @@ The depth is encoded in millimeters (mm) in the RGB channels of the image. This 
       <description>The Plugin exposes a vereity of actor components, which can be used to generate data from the virtual world inside the Editor. The following will explain how to capture images data from within level.
 First open a level of your choice inside the unreal Editor.
  After that right click in the content browser to create a new Blueprint and choose Actor as base class.
-  Open the created Blueprint in the editor.</description>
+   Open the created Blueprint in the editor.</description>
     </item>
     
     <item>

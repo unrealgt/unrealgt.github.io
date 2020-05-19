@@ -12,21 +12,21 @@
     <title>Getting Started :: Homepage</title>
 
     
-    <link href="/css/nucleus.css?1589900295" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1589900295" rel="stylesheet">
-    <link href="/css/hybrid.css?1589900295" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1589900295" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1589900295" rel="stylesheet">
-    <link href="/css/auto-complete.css?1589900295" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1589900295" rel="stylesheet">
-    <link href="/css/theme.css?1589900295" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1589900295" rel="stylesheet">
+    <link href="/css/nucleus.css?1589901680" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1589901680" rel="stylesheet">
+    <link href="/css/hybrid.css?1589901680" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1589901680" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1589901680" rel="stylesheet">
+    <link href="/css/auto-complete.css?1589901680" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1589901680" rel="stylesheet">
+    <link href="/css/theme.css?1589901680" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1589901680" rel="stylesheet">
     
-    <link href="/css/theme-grey.css?1589900295" rel="stylesheet">
+    <link href="/css/theme-grey.css?1589901680" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1589900295"></script>
+    <script src="/js/jquery-3.3.1.min.js?1589901680"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -127,14 +127,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1589900295"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1589900295"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1589901680"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1589901680"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/unrealgt.github.io\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1589900295"></script>
+<script type="text/javascript" src="/js/search.js?1589901680"></script>
 
     
   </div>
@@ -779,17 +779,16 @@
 The following will explain how to capture images data from within level.</p>
 <p>First open a level of your choice inside the unreal Editor.</p>
 <figure class="captionright">
-    <img src="../images/create_blueprint.png"
-         alt="After that right click in the content browser to create a new Blueprint and choose Actor as base class." height="300"/> <figcaption>
+    <img src="../images/create_blueprint.png?height=400px"
+         alt="After that right click in the content browser to create a new Blueprint and choose Actor as base class."/> <figcaption>
             <p>After that right click in the content browser to create a new Blueprint and choose <strong>Actor</strong> as base class.</p>
         </figcaption>
 </figure>
 
-<p>Open the created Blueprint in the editor.</p>
 <figure class="captionleft">
-    <img src="../images/add_components.png"
-         alt="And add the following components to your created Blueprint: ULImageGenerator, ULFileStreamer, ULTimedCaptureTrigger and an optional ULCameraMovement" height="300"/> <figcaption>
-            <p>And add the following components to your created Blueprint: <br>ULImageGenerator, ULFileStreamer, ULTimedCaptureTrigger and an <strong>optional</strong> ULCameraMovement</p>
+    <img src="../images/add_components.png?height=300px"
+         alt="Open the created Blueprint in the editor. and add the following components to your created Blueprint: ULImageGenerator, ULFileStreamer, ULTimedCaptureTrigger and an optional ULCameraMovement"/> <figcaption>
+            <p>Open the created Blueprint in the editor. and add the following components to your created Blueprint: <br>ULImageGenerator, ULFileStreamer, ULTimedCaptureTrigger and an <strong>optional</strong> ULCameraMovement</p>
         </figcaption>
 </figure>
 
@@ -800,7 +799,7 @@ You can configure the resolution and output image format.
 We use BMP as format in this example since it doesn&rsquo;t require CPU heavy compression.<br>
 Keep in mind that multiple image generators or high resolutions will degrade your performance at runtime, because each image generator requires it&rsquo;s own render pass.</p>
 <figure class="captionleft">
-    <img src="../images/image_generator_properties.png" height="300"/> 
+    <img src="../images/image_generator_properties.png?height=300"/> 
 </figure>
 
 <p><strong>ULFileStreamer</strong></p>
@@ -809,7 +808,7 @@ Keep in mind that multiple image generators or high resolutions will degrade you
 <p>Due to a limitation the dropdown will only list components after the blueprint was compiled,
 so if your ImageGenerator doesn&rsquo;t show up at first hit compile at the top and retry.</p>
 <figure class="captionleft">
-    <img src="../images/file_streamer_properties.png" height="300"/> 
+    <img src="../images/file_streamer_properties.png?height=300"/> 
 </figure>
 
 <p>You can also set the naming convention for the created files.
@@ -820,7 +819,7 @@ The files are stored inside your Projects <code>Saved</code> Directory in the <c
 Generators that should be triggered by this component, must be added to the Data Generators Array.
 Here we add our image generator to the Array.</p>
 <figure class="captionleft">
-    <img src="../images/timed_capture_properties.png" height="300"/> 
+    <img src="../images/timed_capture_properties.png?height=300"/> 
 </figure>
 
 <p>Generation is triggered at a fixed time interval which can be modified by changing the Frame Rate parameter <code>1/framerate = time between images in seconds</code>.
@@ -831,7 +830,7 @@ a CameraMovementComponent to your blueprint. This component will add some basic 
 <p>We choose the default Follow Main View as movement mode.
 (TODO movement mode will be an enum in the future update image)</p>
 <figure class="captionleft">
-    <img src="../images/camera_movement_properties.png" height="300"/> 
+    <img src="../images/camera_movement_properties.png?height=300"/> 
 </figure>
 
 <ul>
@@ -1251,19 +1250,19 @@ and write the examples name in the text box.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1589900295"></script>
-    <script src="/js/perfect-scrollbar.min.js?1589900295"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1589900295"></script>
-    <script src="/js/jquery.sticky.js?1589900295"></script>
-    <script src="/js/featherlight.min.js?1589900295"></script>
-    <script src="/js/highlight.pack.js?1589900295"></script>
+    <script src="/js/clipboard.min.js?1589901680"></script>
+    <script src="/js/perfect-scrollbar.min.js?1589901680"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1589901680"></script>
+    <script src="/js/jquery.sticky.js?1589901680"></script>
+    <script src="/js/featherlight.min.js?1589901680"></script>
+    <script src="/js/highlight.pack.js?1589901680"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1589900295"></script>
-    <script src="/js/learn.js?1589900295"></script>
-    <script src="/js/hugo-learn.js?1589900295"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1589901680"></script>
+    <script src="/js/learn.js?1589901680"></script>
+    <script src="/js/hugo-learn.js?1589901680"></script>
 
-    <link href="/mermaid/mermaid.css?1589900295" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1589900295"></script>
+    <link href="/mermaid/mermaid.css?1589901680" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1589901680"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
