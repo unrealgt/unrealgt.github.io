@@ -1,5 +1,5 @@
 {
-    "filename": "C:\\Users\\lolleko\\Repos\\UnrealGTContainer\\Plugins\\unrealgt\\Source\\UnrealGT\\Public\\Generators\\Text\\GTActorInfoGeneratorComponent.h",
+    "filename": "c:\\Users\\lolleko\\Repos\\UnrealGTContainer\\Plugins\\unrealgt\\Source\\UnrealGT\\Public\\Generators\\Text\\GTActorInfoGeneratorComponent.h",
     "description": "Generates information about actors in a scene (e.g. MeshName, BoundingBoxes, ActorName).  The Output format can be customize via formatting strings.",
     "properties": [
         {

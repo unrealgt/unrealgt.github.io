@@ -7,19 +7,19 @@ weight: 2
 
 ### Requirements
 
-* Unreal Engine 4.21 or higher
+- Unreal Engine 4.24 or higher (you can try older versions but some features might not work as expected)
 
 #### Windows
 
-* Visual Studio 2017 or 2019 (2015 should work aswell but is not tested)
+- Visual Studio 2017 or 2019 (2015 should work aswell but is not tested)
 
 #### macOS
 
-* XCode Command Line Tools
+- XCode Command Line Tools
 
 #### Linux
 
-* Nothing if you already built the engine from source
+- Nothing if you already built the engine from source
 
 ## Installation
 
@@ -32,4 +32,4 @@ This requires you to build your project from source manually.
 
 3. Build & Run the generated solution/cmake project from your IDE or the CLI.<br>Select DebugGameEditor or DevelopmentGameEditor as Target.
 
-5. After the Editor has launched goto `Edit > Plugins` and enable the UnrealGT plugin.
+4. After the Editor has launched goto `Edit > Plugins` and enable the UnrealGT plugin.

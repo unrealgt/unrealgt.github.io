@@ -1,7 +1,19 @@
 {
-    "filename": "C:\\Users\\lolleko\\Repos\\UnrealGTContainer\\Plugins\\unrealgt\\Source\\UnrealGT\\Public\\GTObjectFilter.h",
+    "filename": "c:\\Users\\lolleko\\Repos\\UnrealGTContainer\\Plugins\\unrealgt\\Source\\UnrealGT\\Public\\GTObjectFilter.h",
     "description": "",
     "properties": [
+        {
+            "description": "",
+            "category": "Mesh",
+            "propType": "UStaticMesh*",
+            "name": " StaticMesh"
+        },
+        {
+            "description": "",
+            "category": "Mesh",
+            "propType": "USkeletalMesh*",
+            "name": " SkeletalMesh"
+        },
         {
             "description": "",
             "category": "Mesh",
@@ -31,6 +43,12 @@
             "category": "Tag",
             "propType": "FName",
             "name": " ComponentTag"
+        },
+        {
+            "description": "",
+            "category": "Instance",
+            "propType": "AActor*",
+            "name": " ActorInstance"
         }
     ]
 }

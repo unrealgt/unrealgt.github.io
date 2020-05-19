@@ -1,7 +1,13 @@
 {
-    "filename": "C:\\Users\\lolleko\\Repos\\UnrealGTContainer\\Plugins\\unrealgt\\Source\\UnrealGT\\Public\\GTGeneratorReference.h",
+    "filename": "c:\\Users\\lolleko\\Repos\\UnrealGTContainer\\Plugins\\unrealgt\\Source\\UnrealGT\\Public\\GTGeneratorReference.h",
     "description": "",
     "properties": [
+        {
+            "description": "",
+            "category": "Component",
+            "propType": "AActor*",
+            "name": " OtherActor"
+        },
         {
             "description": "Name of component property to use",
             "category": "Component",
