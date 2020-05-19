@@ -47,7 +47,7 @@ The depth is encoded in millimeters (mm) in the RGB channels of the image. This 
       <pubDate>Fri, 26 Jul 2019 14:14:04 +0200</pubDate>
       
       <guid>https://unrealgt.github.io/basics/installation/</guid>
-      <description>Requirements  Unreal Engine 4.21 or higher  Windows  Visual Studio 2017 or 2019 (2015 should work aswell but is not tested)  macOS  XCode Command Line Tools  Linux  Nothing if you already built the engine from source  Installation The only way to install the plugin is to build it from Source in an existing project. This requires you to build your project from source manually.</description>
+      <description>Requirements  Unreal Engine 4.24 or higher (you can try older versions but some features might not work as expected)  Windows  Visual Studio 2017 or 2019 (2015 should work aswell but is not tested)  macOS  XCode Command Line Tools  Linux  Nothing if you already built the engine from source  Installation The only way to install the plugin is to build it from Source in an existing project.</description>
     </item>
     
     <item>
